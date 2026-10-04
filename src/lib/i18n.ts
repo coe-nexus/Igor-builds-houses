@@ -25,5 +25,24 @@ export function useI18n() {
     t: (key: UiKey) => t(key, lang),
     pick: (bi: Bi) => pick(bi, lang),
     n: (value: number) => formatNumber(value, lang),
+    tx: (key: string) => tx(key, lang),
+    date: (iso: string) => formatDate(iso, lang),
   };
+}
+
+/** UI string by a key known only at run time (milestone keys, hold_by_*). Falls back to the key itself. */
+export function tx(key: string, lang: Lang): string {
+  return ui[lang][key as UiKey] ?? key;
+}
+
+/** Replace {name} placeholders. */
+export function fill(template: string, values: Record<string, string | number>): string {
+  return template.replace(/\{(\w+)\}/g, (m, k: string) => (k in values ? String(values[k]) : m));
+}
+
+/** "03 nov. 2026" in PT, "03 Nov 2026" in EN. Dates are ISO strings and always rendered in UTC. */
+export function formatDate(iso: string, lang: Lang): string {
+  return new Intl.DateTimeFormat(lang === "pt" ? "pt-BR" : "en-GB", { timeZone: "UTC", day: "2-digit", month: "short", year: "numeric" }).format(
+    new Date(iso + "T00:00:00Z"),
+  );
 }

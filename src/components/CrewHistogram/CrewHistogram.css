@@ -1,0 +1,82 @@
+.histogram {
+  padding: 16px;
+}
+.hist-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px 16px;
+  margin-bottom: 8px;
+}
+.hist-head h3 {
+  margin: 0;
+}
+.hist-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 11px;
+  color: var(--muted);
+}
+.hist-legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.hl {
+  width: 10px;
+  height: 10px;
+}
+.hl-site { background: var(--accent); }
+.hl-shop { background: var(--track-prefab); opacity: 0.6; }
+.hl-peak { height: 0; border-top: 2px dashed var(--text); }
+.hist-plot {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  gap: 2px;
+  height: 140px;
+  border-bottom: 1px solid var(--border);
+}
+.hist-peak {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-top: 1px dashed var(--text);
+  opacity: 0.7;
+  pointer-events: none;
+}
+.hist-col {
+  flex: 1;
+  min-width: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.hist-stack {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  height: 100%;
+}
+.hist-site {
+  display: block;
+  background: var(--accent);
+  opacity: 0.55;
+}
+.hist-shop {
+  display: block;
+  background: var(--track-prefab);
+  opacity: 0.45;
+}
+.hist-col.is-now .hist-site {
+  opacity: 1;
+}
+.hist-col:hover .hist-site {
+  opacity: 0.85;
+}

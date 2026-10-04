@@ -1,0 +1,1 @@
+export { CrewHistogram } from "./CrewHistogram";

@@ -1,0 +1,46 @@
+.build {
+  margin-top: 32px;
+  border-top: 1px solid var(--border);
+}
+.build-head {
+  display: grid;
+  gap: 12px;
+  padding: 24px 16px 16px;
+}
+.build-head h2 {
+  margin: 0;
+  font-family: var(--font-label);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-strong);
+}
+.build-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+}
+/* Mobile: the scene (16:10) and the scrubber stay pinned under the page top while the day panel and Gantt scroll. */
+.build-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--bg);
+}
+.build-right {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+  padding: 0 16px 16px;
+}
+@media (min-width: 900px) {
+  .build-grid {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    gap: 16px;
+  }
+  .build-sticky {
+    top: 8px;
+  }
+  .build-right {
+    padding: 16px 16px 16px 0;
+  }
+}

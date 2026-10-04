@@ -1,0 +1,232 @@
+.gantt {
+  --g-label: 96px;
+  min-width: 0;
+}
+.gantt-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+  margin-bottom: 8px;
+}
+.gantt-switch {
+  min-height: 36px;
+  padding: 0 12px;
+  font: inherit;
+  font-size: 12px;
+  color: var(--text);
+  background: transparent;
+  border: 1px solid var(--border);
+  cursor: pointer;
+}
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 11px;
+  color: var(--muted);
+}
+.legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.lg {
+  width: 16px;
+  height: 8px;
+  border: 2px solid var(--muted);
+  box-sizing: border-box;
+}
+.lg-fill { background: var(--muted); }
+.lg-off { background: transparent; }
+.lg-opt { background: repeating-linear-gradient(135deg, var(--muted) 0 2px, transparent 2px 4px); border-color: var(--muted); }
+.lg-sub { background: var(--muted); border-style: dashed; opacity: 0.7; }
+.lg-gap { background: var(--grid); border: 0; width: 7px; height: 12px; }
+.lg-diamond { color: var(--track-inspection); }
+
+.gantt-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  -webkit-overflow-scrolling: touch;
+}
+.gantt-grid {
+  position: relative;
+}
+.g-row {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+}
+.g-row:last-of-type {
+  border-bottom: 0;
+}
+.g-label {
+  position: sticky;
+  left: 0;
+  z-index: 3;
+  flex: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  width: var(--g-label);
+  padding: 6px 6px;
+  font-size: 11px;
+  line-height: 1.25;
+  background: var(--bg);
+  border-right: 1px solid var(--border);
+}
+.g-chip {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  margin-top: 3px;
+  border-radius: 2px;
+}
+.g-line {
+  position: relative;
+  flex: none;
+  flex-grow: 1;
+}
+.g-head .g-label {
+  background: var(--bg);
+}
+.g-day {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-label);
+  font-size: 9px;
+  line-height: 15px;
+  color: var(--muted);
+}
+.g-day small {
+  font-size: 9px;
+  line-height: 14px;
+  opacity: 0.7;
+}
+.g-day.is-five span {
+  color: var(--text);
+}
+.g-day.is-now span {
+  color: var(--accent);
+  font-weight: 700;
+}
+.g-bar {
+  position: absolute;
+  height: 22px;
+  padding: 0 5px;
+  overflow: hidden;
+  font: inherit;
+  font-size: 10px;
+  line-height: 18px;
+  text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: var(--bg);
+  background: var(--c);
+  border: 2px solid var(--c);
+  border-radius: 2px;
+  cursor: pointer;
+}
+.g-text {
+  pointer-events: none;
+}
+.g-bar.is-future {
+  opacity: 0.4;
+}
+.g-off {
+  color: var(--text);
+  background: transparent;
+}
+.g-opt {
+  color: var(--text-strong);
+  background: repeating-linear-gradient(135deg, var(--c) 0 3px, transparent 3px 7px);
+}
+.g-sub {
+  border-style: dashed;
+}
+.g-bar.is-selected {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+.g-diamond {
+  position: absolute;
+  z-index: 2;
+  width: 20px;
+  height: 22px;
+  padding: 0;
+  font: inherit;
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--track-inspection);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  text-shadow: 0 0 3px var(--bg), 0 0 3px var(--bg);
+}
+.g-diamond.is-future {
+  opacity: 0.5;
+}
+.g-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: var(--g-label);
+  z-index: 1;
+  pointer-events: none;
+}
+.g-gap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: var(--grid);
+  opacity: 0.8;
+}
+.g-cursor {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: color-mix(in srgb, var(--accent) 16%, transparent);
+  border-left: 1px solid var(--accent);
+  border-right: 1px solid var(--accent);
+}
+.gantt-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+}
+.gantt-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+.gantt-table th,
+.gantt-table td {
+  padding: 6px 8px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--border);
+}
+.gantt-table thead th {
+  font-family: var(--font-label);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.gantt-table tbody th {
+  font-weight: 400;
+  min-width: 200px;
+}
+.gantt-table tr.is-selected {
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
+@media (min-width: 900px) {
+  .gantt {
+    --g-label: 120px;
+  }
+}

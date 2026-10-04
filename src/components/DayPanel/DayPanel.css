@@ -1,0 +1,90 @@
+.day-panel {
+  padding: 16px;
+}
+.day-title {
+  margin: 0 0 4px;
+  font-family: var(--font-label);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-strong);
+}
+.day-crew {
+  margin: 0 0 12px;
+  color: var(--muted);
+}
+.day-crew strong {
+  color: var(--text-strong);
+}
+.hold-card {
+  display: flex;
+  gap: 12px;
+  margin: 0 0 12px;
+  padding: 12px;
+  border: 1px solid var(--track-inspection);
+  background: color-mix(in srgb, var(--track-inspection) 12%, transparent);
+}
+.hold-card p {
+  margin: 0;
+}
+.hold-diamond {
+  color: var(--track-inspection);
+  font-size: 20px;
+  line-height: 1.2;
+}
+.hold-title {
+  font-family: var(--font-label);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--track-inspection);
+}
+.hold-by {
+  margin-top: 4px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.day-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.day-list li {
+  display: flex;
+  gap: 10px;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+}
+.day-list li.is-selected {
+  border-color: var(--accent);
+}
+.track-chip {
+  flex: none;
+  width: 6px;
+  align-self: stretch;
+  border-radius: 1px;
+}
+.day-item-text {
+  margin: 0;
+}
+.day-item-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+.badge {
+  padding: 0 6px;
+  border: 1px solid var(--border);
+  font-family: var(--font-label);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.badge-hold {
+  color: var(--track-inspection);
+  border-color: var(--track-inspection);
+}
