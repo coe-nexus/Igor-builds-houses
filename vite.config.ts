@@ -1,3 +1,4 @@
+/// <reference types="vitest/config" />
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { defineConfig, type Plugin } from "vite";
@@ -51,4 +52,5 @@ export default defineConfig({
   base: process.env.VITE_BASE ?? "/",
   plugins: [brandHtml(), redactUnconfirmedPartners()],
   build: { outDir: "dist" },
+  test: { environment: "node", include: ["src/**/*.test.ts"] },
 });
