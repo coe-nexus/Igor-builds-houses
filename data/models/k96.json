@@ -1,0 +1,602 @@
+{
+  "id": "k96",
+  "name": {
+    "pt": "Kiver 96",
+    "en": "Kiver 96"
+  },
+  "footprint": {
+    "w": 8,
+    "l": 12,
+    "floors": 1,
+    "ceiling_m": 3.0,
+    "bay_m": 4
+  },
+  "area_m2": 96,
+  "system": "steel",
+  "system_label": {
+    "pt": "Chassi de aço + painéis leves",
+    "en": "Steel chassis + light frame infill"
+  },
+  "working_days": 30,
+  "crew_peak": 8,
+  "shop_crew": 4,
+  "milestones": {
+    "ring": 8,
+    "structure_done": 12,
+    "weathertight": 16,
+    "mep_tested": 20,
+    "handover": 30
+  },
+  "risk_note": {
+    "pt": "Equipe de 8 em obra, 4 na fábrica. Dia de içamento no dia 13; estanque no dia 16.",
+    "en": "Crew of 8 on site, 4 in the shop. Tilt-up on day 13; weathertight on day 16."
+  },
+  "land_note": {
+    "pt": "Referência: Lote 40.",
+    "en": "Reference build: Lote 40."
+  },
+  "tracks": [
+    {
+      "id": "prefab",
+      "pt": "Pré-fabricação (fora da obra)",
+      "en": "Prefab (off-site)"
+    },
+    {
+      "id": "foundation",
+      "pt": "Fundação",
+      "en": "Foundation"
+    },
+    {
+      "id": "structure",
+      "pt": "Estrutura",
+      "en": "Structure"
+    },
+    {
+      "id": "envelope",
+      "pt": "Envelope",
+      "en": "Envelope"
+    },
+    {
+      "id": "mep",
+      "pt": "Elétrica / hidráulica",
+      "en": "MEP"
+    },
+    {
+      "id": "finishes",
+      "pt": "Acabamentos",
+      "en": "Finishes"
+    },
+    {
+      "id": "options",
+      "pt": "Opcionais",
+      "en": "Options"
+    },
+    {
+      "id": "inspection",
+      "pt": "Vistorias e entrega",
+      "en": "Inspections & handover"
+    }
+  ],
+  "scene": {
+    "builder": "steelChassis",
+    "steps": [
+      {
+        "id": "site",
+        "pt": "Terreno locado",
+        "en": "Site staked"
+      },
+      {
+        "id": "found_points",
+        "pt": "Blocos de fundação",
+        "en": "Footings"
+      },
+      {
+        "id": "gravel",
+        "pt": "Brita",
+        "en": "Gravel pad"
+      },
+      {
+        "id": "ring",
+        "pt": "Anel de vigas W",
+        "en": "W beam ring"
+      },
+      {
+        "id": "joists_f1",
+        "pt": "Barrotes térreo",
+        "en": "Ground joists"
+      },
+      {
+        "id": "deck_f1",
+        "pt": "Deck térreo",
+        "en": "Ground deck"
+      },
+      {
+        "id": "columns_f1",
+        "pt": "Pilares térreo",
+        "en": "Ground columns"
+      },
+      {
+        "id": "top_ring",
+        "pt": "Vigas de topo",
+        "en": "Top ring"
+      },
+      {
+        "id": "purlins",
+        "pt": "Terças",
+        "en": "Purlins"
+      },
+      {
+        "id": "walls_f1",
+        "pt": "Painéis 1º piso",
+        "en": "Floor 1 panels"
+      },
+      {
+        "id": "roof_panels",
+        "pt": "Cobertura",
+        "en": "Roof"
+      },
+      {
+        "id": "wrap",
+        "pt": "Manta e rufos",
+        "en": "Wrap & flashings"
+      },
+      {
+        "id": "windows",
+        "pt": "Esquadrias",
+        "en": "Windows"
+      },
+      {
+        "id": "siding",
+        "pt": "Siding",
+        "en": "Siding"
+      },
+      {
+        "id": "partitions",
+        "pt": "Divisórias",
+        "en": "Partitions"
+      },
+      {
+        "id": "interior_lining",
+        "pt": "Forro interno",
+        "en": "Interior lining"
+      },
+      {
+        "id": "floor_finish",
+        "pt": "Piso SPC",
+        "en": "SPC floor"
+      },
+      {
+        "id": "terrace",
+        "pt": "Terraço",
+        "en": "Terrace"
+      },
+      {
+        "id": "carport",
+        "pt": "Garagem",
+        "en": "Carport"
+      },
+      {
+        "id": "solar",
+        "pt": "Solar",
+        "en": "Solar"
+      }
+    ]
+  },
+  "activities": [
+    {
+      "id": "steel_fab",
+      "track": "prefab",
+      "start": 1,
+      "end": 7,
+      "crew": 4,
+      "pt": "Fabricação do aço na Metal Forte: baldrame W, pilares, vigas de topo, terças. Entregas em lotes, primeiro lote no dia 8.",
+      "en": "Steel fabrication at the shop: W baldrame ring, columns, top rings, purlins. Delivered in batches, first batch on day 8.",
+      "offsite": true
+    },
+    {
+      "id": "panels_fab",
+      "track": "prefab",
+      "start": 2,
+      "end": 12,
+      "crew": 4,
+      "pt": "Painéis de parede pré-fabricados (montante metálico @400, copaíba 6 mm, manta, vãos de janela). Prontos um dia antes do içamento de cada pavimento.",
+      "en": "Wall panels prefabricated (metal stud @400, 6 mm copaíba, wrap, window bucks). Ready one day before each floor's tilt-up.",
+      "offsite": true
+    },
+    {
+      "id": "stakeout",
+      "track": "foundation",
+      "start": 1,
+      "end": 1,
+      "crew": 2,
+      "pt": "Locação da obra, gabarito, níveis. Câmeras ligadas.",
+      "en": "Stakeout, batter boards, levels. Cameras live.",
+      "scene_step": "site"
+    },
+    {
+      "id": "excav",
+      "track": "foundation",
+      "start": 1,
+      "end": 2,
+      "crew": 3,
+      "pt": "Escavação dos pontos de fundação (um por pilar).",
+      "en": "Excavation of foundation points (one per column).",
+      "scene_step": "site"
+    },
+    {
+      "id": "rebar",
+      "track": "foundation",
+      "start": 2,
+      "end": 3,
+      "crew": 3,
+      "pt": "Formas e armação dos blocos; chumbadores posicionados no gabarito de aço.",
+      "en": "Forms and rebar for the footings; anchor bolts set on the steel template.",
+      "hold_point": {
+        "pt": "Ponto de parada: vistoria da armação antes da concretagem.",
+        "en": "Hold point: rebar inspection before the pour.",
+        "by": "engineer"
+      }
+    },
+    {
+      "id": "pour",
+      "track": "foundation",
+      "start": 3,
+      "end": 3,
+      "crew": 4,
+      "pt": "Concretagem dos blocos.",
+      "en": "Footing pour.",
+      "scene_step": "found_points"
+    },
+    {
+      "id": "cure",
+      "track": "foundation",
+      "start": 4,
+      "end": 7,
+      "crew": 0,
+      "pt": "Cura do concreto. Nenhuma carga sobre os blocos.",
+      "en": "Concrete cure. No load on the footings."
+    },
+    {
+      "id": "gravel",
+      "track": "foundation",
+      "start": 4,
+      "end": 5,
+      "crew": 2,
+      "pt": "Brita de regularização sob a casa, drenagem perimetral.",
+      "en": "Gravel pad under the house, perimeter drainage.",
+      "scene_step": "gravel"
+    },
+    {
+      "id": "mep_under",
+      "track": "mep",
+      "start": 4,
+      "end": 6,
+      "crew": 2,
+      "pt": "Redes enterradas: esgoto até a fossa/rede, água, eletroduto de entrada, aterramento.",
+      "en": "Underground runs: sewer to septic/main, water, electrical entry conduit, grounding."
+    },
+    {
+      "id": "ring",
+      "track": "structure",
+      "start": 8,
+      "end": 8,
+      "crew": 5,
+      "pt": "Assentamento e nivelamento do anel de vigas W sobre os blocos; solda nos chumbadores.",
+      "en": "W beam ring set and levelled on the footings; welded to anchors.",
+      "scene_step": "ring"
+    },
+    {
+      "id": "joists_f1",
+      "track": "structure",
+      "start": 9,
+      "end": 9,
+      "crew": 4,
+      "pt": "Barrotes metálicos do piso térreo @60 cm.",
+      "en": "Ground floor steel joists @60 cm.",
+      "scene_step": "joists_f1"
+    },
+    {
+      "id": "cols_f1",
+      "track": "structure",
+      "start": 10,
+      "end": 10,
+      "crew": 4,
+      "pt": "Pilares do térreo soldados ao anel (malha de 4 m).",
+      "en": "Ground floor columns welded to the ring (4 m grid).",
+      "scene_step": "columns_f1"
+    },
+    {
+      "id": "topring",
+      "track": "structure",
+      "start": 11,
+      "end": 11,
+      "crew": 5,
+      "pt": "Vigas de topo fecham o cubo.",
+      "en": "Top ring beams close the cube.",
+      "scene_step": "top_ring"
+    },
+    {
+      "id": "purlins",
+      "track": "structure",
+      "start": 12,
+      "end": 12,
+      "crew": 5,
+      "pt": "Terças da cobertura.",
+      "en": "Roof purlins.",
+      "scene_step": "purlins",
+      "hold_point": {
+        "pt": "Ponto de parada: vistoria estrutural (soldas, prumo, nível) com a responsável técnica.",
+        "en": "Hold point: structural inspection (welds, plumb, level) with the engineer of record.",
+        "by": "engineer"
+      }
+    },
+    {
+      "id": "deck_f1",
+      "track": "structure",
+      "start": 9,
+      "end": 10,
+      "crew": 3,
+      "pt": "Deck de compensado naval 18 mm no térreo, antes dos pilares (sequência Lote 40).",
+      "en": "18 mm naval plywood deck, ground floor, before the columns (Lote 40 sequence).",
+      "scene_step": "deck_f1"
+    },
+    {
+      "id": "walls_f1",
+      "track": "envelope",
+      "start": 13,
+      "end": 13,
+      "crew": 8,
+      "pt": "Içamento: painéis do 1º pavimento posicionados, aprumados e fixados aos pilares.",
+      "en": "Tilt-up: floor 1 panels set, plumbed and fixed to the columns.",
+      "scene_step": "walls_f1"
+    },
+    {
+      "id": "roof",
+      "track": "envelope",
+      "start": 14,
+      "end": 15,
+      "crew": 3,
+      "pt": "Telha sanduíche EPS 30 mm sobre as terças; face inferior pré-pintada é o forro.",
+      "en": "EPS 30 mm sandwich roof on the purlins; pre-painted underside is the ceiling.",
+      "scene_step": "roof_panels"
+    },
+    {
+      "id": "gutters",
+      "track": "envelope",
+      "start": 15,
+      "end": 15,
+      "crew": 1,
+      "pt": "Calhas, rufos, fitas da manta.",
+      "en": "Gutters, flashings, wrap taping.",
+      "scene_step": "wrap"
+    },
+    {
+      "id": "windows",
+      "track": "envelope",
+      "start": 15,
+      "end": 16,
+      "crew": 2,
+      "pt": "Esquadrias de alumínio e portas externas.",
+      "en": "Aluminium windows and external doors.",
+      "scene_step": "windows",
+      "hold_point": {
+        "pt": "Ponto de parada: casa estanque (teste de água nas esquadrias e cobertura).",
+        "en": "Hold point: weathertight (water test on windows and roof).",
+        "by": "engineer"
+      }
+    },
+    {
+      "id": "siding",
+      "track": "envelope",
+      "start": 17,
+      "end": 21,
+      "crew": 2,
+      "pt": "Ripas da câmara ventilada e siding cimentício.",
+      "en": "Ventilated-cavity battens and fibre cement siding.",
+      "scene_step": "siding"
+    },
+    {
+      "id": "mep_rough",
+      "track": "mep",
+      "start": 15,
+      "end": 19,
+      "crew": 2,
+      "pt": "Infra elétrica e hidráulica dentro dos painéis e barrotes; caixa de medição, quadro.",
+      "en": "Electrical and hydraulic rough-in inside panels and joists; meter box, panel board."
+    },
+    {
+      "id": "tank",
+      "track": "mep",
+      "start": 19,
+      "end": 19,
+      "crew": 1,
+      "pt": "Caixa d'água e suporte; aquecimento de água.",
+      "en": "Water tank and stand; water heating."
+    },
+    {
+      "id": "mep_test",
+      "track": "mep",
+      "start": 20,
+      "end": 20,
+      "crew": 2,
+      "pt": "Teste de pressão hidráulica, continuidade e isolamento elétrico.",
+      "en": "Hydraulic pressure test, electrical continuity and insulation test.",
+      "hold_point": {
+        "pt": "Ponto de parada: laudo de testes MEP antes de fechar as paredes.",
+        "en": "Hold point: MEP test report before walls are closed.",
+        "by": "engineer"
+      }
+    },
+    {
+      "id": "partitions",
+      "track": "envelope",
+      "start": 16,
+      "end": 18,
+      "crew": 2,
+      "pt": "Estrutura das divisórias internas.",
+      "en": "Interior partition framing.",
+      "scene_step": "partitions"
+    },
+    {
+      "id": "insulation",
+      "track": "envelope",
+      "start": 18,
+      "end": 19,
+      "crew": 1,
+      "pt": "Lã de PET nas paredes externas.",
+      "en": "PET wool insulation in external walls."
+    },
+    {
+      "id": "lining",
+      "track": "finishes",
+      "start": 20,
+      "end": 22,
+      "crew": 3,
+      "pt": "Forro interno de compensado 6 mm nas externas e divisórias.",
+      "en": "6 mm plywood interior lining on external walls and partitions.",
+      "scene_step": "interior_lining"
+    },
+    {
+      "id": "floor",
+      "track": "finishes",
+      "start": 23,
+      "end": 24,
+      "crew": 2,
+      "pt": "Piso vinílico SPC.",
+      "en": "SPC vinyl floor.",
+      "scene_step": "floor_finish"
+    },
+    {
+      "id": "doors_int",
+      "track": "finishes",
+      "start": 25,
+      "end": 25,
+      "crew": 1,
+      "pt": "Portas internas.",
+      "en": "Internal doors."
+    },
+    {
+      "id": "kitchen_bath",
+      "track": "finishes",
+      "start": 24,
+      "end": 27,
+      "crew": 2,
+      "pt": "Cozinha e banheiros: bancadas, louças, metais.",
+      "en": "Kitchen and bathrooms: counters, sanitary ware, taps."
+    },
+    {
+      "id": "paint",
+      "track": "finishes",
+      "start": 23,
+      "end": 28,
+      "crew": 2,
+      "pt": "Pintura, vernizes, selantes.",
+      "en": "Painting, varnish, sealants."
+    },
+    {
+      "id": "fixtures",
+      "track": "finishes",
+      "start": 28,
+      "end": 29,
+      "crew": 2,
+      "pt": "Tomadas, interruptores, luminárias, acabamentos.",
+      "en": "Sockets, switches, luminaires, trim."
+    },
+    {
+      "id": "opt_terrace",
+      "track": "options",
+      "start": 23,
+      "end": 25,
+      "crew": 2,
+      "pt": "Opcional: terraço coberto de 17 m² na malha de aço.",
+      "en": "Option: 17 m² covered terrace on the steel grid.",
+      "scene_step": "terrace",
+      "optional": true
+    },
+    {
+      "id": "opt_carport",
+      "track": "options",
+      "start": 26,
+      "end": 27,
+      "crew": 2,
+      "pt": "Opcional: garagem/pergolado para 2 carros.",
+      "en": "Option: 2-car carport / pergola.",
+      "scene_step": "carport",
+      "optional": true
+    },
+    {
+      "id": "opt_solar",
+      "track": "options",
+      "start": 28,
+      "end": 29,
+      "crew": 0,
+      "pt": "Opcional: kit solar 5 kWp na cobertura (instalador terceirizado).",
+      "en": "Option: 5 kWp solar kit on the roof (subcontracted installer).",
+      "scene_step": "solar",
+      "optional": true,
+      "subcontracted": true
+    },
+    {
+      "id": "commission",
+      "track": "inspection",
+      "start": 29,
+      "end": 29,
+      "crew": 2,
+      "pt": "Comissionamento: vistoria final, lista de pendências, fotos as-built, arquivo das câmeras.",
+      "en": "Commissioning: final inspection, punch list, as-built photos, camera archive.",
+      "hold_point": {
+        "pt": "Ponto de parada: aceite da responsável técnica; pedido de habite-se protocolado.",
+        "en": "Hold point: engineer sign-off; habite-se request filed.",
+        "by": "engineer"
+      }
+    },
+    {
+      "id": "handover",
+      "track": "inspection",
+      "start": 30,
+      "end": 30,
+      "crew": 2,
+      "pt": "Limpeza fina, entrega das chaves, manual da casa, ligações definitivas.",
+      "en": "Final clean, key handover, house manual, permanent utility connections.",
+      "hold_point": {
+        "pt": "Entrega.",
+        "en": "Handover.",
+        "by": "owner"
+      }
+    }
+  ],
+  "crew_by_day": [
+    5,
+    6,
+    7,
+    4,
+    4,
+    2,
+    0,
+    5,
+    7,
+    7,
+    5,
+    5,
+    8,
+    3,
+    8,
+    6,
+    6,
+    7,
+    6,
+    7,
+    5,
+    3,
+    6,
+    8,
+    7,
+    6,
+    6,
+    4,
+    4,
+    2
+  ],
+  "days_over_peak": [],
+  "crew_peak_observed": 8
+}

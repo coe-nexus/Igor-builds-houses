@@ -1,0 +1,202 @@
+{
+  "title": {
+    "pt": "Due diligence da obra",
+    "en": "Build due diligence"
+  },
+  "intro": {
+    "pt": "Tudo isso acontece antes do Dia 1. Não conta nos 30 dias úteis. Os 30 dias só começam quando a última linha está verde.",
+    "en": "All of this happens before Day 1. None of it counts in the 30 working days. The 30 days start only when the last line is green."
+  },
+  "typical_total_weeks": [
+    6,
+    10
+  ],
+  "critical_path": {
+    "pt": "Alvará e prazo de entrega das esquadrias (4 a 6 semanas).",
+    "en": "Permit and window lead time (4 to 6 weeks)."
+  },
+  "steps": [
+    {
+      "id": "lot",
+      "weeks": [
+        1,
+        2
+      ],
+      "partner_ids": [
+        "prefeitura"
+      ],
+      "gate": true,
+      "title": {
+        "pt": "Lote e regras",
+        "en": "Lot and rules"
+      },
+      "pt": "Matrícula, certidão de uso do solo e zoneamento, recuos, regras do condomínio, viabilidade do modelo no lote.",
+      "en": "Title, land-use and zoning certificate, setbacks, condominium rules, fit of the model on the lot."
+    },
+    {
+      "id": "soil",
+      "weeks": [
+        1,
+        2
+      ],
+      "partner_ids": [
+        "soil_lab"
+      ],
+      "gate": true,
+      "title": {
+        "pt": "Solo: pedido e análise",
+        "en": "Soil: order and analysis"
+      },
+      "pt": "Sondagem SPT (2 a 3 furos; mais para o Max), laudo geotécnico, definição da fundação.",
+      "en": "SPT boreholes (2 to 3; more for the Max), geotechnical report, foundation definition."
+    },
+    {
+      "id": "survey",
+      "weeks": [
+        1,
+        1
+      ],
+      "partner_ids": [],
+      "gate": true,
+      "title": {
+        "pt": "Levantamento topográfico",
+        "en": "Topographic survey"
+      },
+      "pt": "Níveis, divisas, posição das redes e do acesso.",
+      "en": "Levels, boundaries, utility and access positions."
+    },
+    {
+      "id": "design",
+      "weeks": [
+        2,
+        3
+      ],
+      "partner_ids": [
+        "mg_projetos",
+        "i9"
+      ],
+      "gate": true,
+      "title": {
+        "pt": "Projetos e ART",
+        "en": "Projects and ART"
+      },
+      "pt": "Projeto padrão adaptado ao lote, estrutural (NBR 8800), elétrico, hidrossanitário, PPCI quando exigido, ART recolhida.",
+      "en": "Standard design adapted to the lot, structural (NBR 8800), electrical, plumbing, fire (PPCI) where required, ART filed."
+    },
+    {
+      "id": "permit",
+      "weeks": [
+        3,
+        6
+      ],
+      "partner_ids": [
+        "prefeitura"
+      ],
+      "gate": true,
+      "title": {
+        "pt": "Alvará",
+        "en": "Building permit"
+      },
+      "pt": "Alvará de construção na Prefeitura; aprovação do condomínio quando aplicável; Bombeiros para o Max.",
+      "en": "Building permit at the Prefeitura; condominium approval where applicable; fire department for the Max."
+    },
+    {
+      "id": "utilities",
+      "weeks": [
+        2,
+        4
+      ],
+      "partner_ids": [
+        "celesc",
+        "aguas"
+      ],
+      "gate": true,
+      "title": {
+        "pt": "Ligações: energia, água, esgoto",
+        "en": "Connections: power, water, sewer"
+      },
+      "pt": "Padrão de entrada e ligação provisória de obra (Celesc); água e esgoto ou poço e fossa (Águas de Joinville).",
+      "en": "Service entrance and temporary site power (Celesc); water and sewer, or well and septic (Águas de Joinville)."
+    },
+    {
+      "id": "procurement",
+      "weeks": [
+        4,
+        6
+      ],
+      "partner_ids": [
+        "metal_forte",
+        "naval"
+      ],
+      "gate": true,
+      "title": {
+        "pt": "Compras",
+        "en": "Procurement"
+      },
+      "pt": "Aço (2 a 3 semanas), compensado naval, telha sanduíche, esquadrias (4 a 6 semanas), siding, kits elétrico e hidráulico, cozinha e banheiros. Entregas casadas com os dias 1 a 13.",
+      "en": "Steel (2 to 3 weeks), naval plywood, sandwich roof, windows (4 to 6 weeks), siding, MEP kits, kitchen and bath packages. Deliveries matched to days 1 to 13."
+    },
+    {
+      "id": "site",
+      "weeks": [
+        0.5,
+        0.5
+      ],
+      "partner_ids": [],
+      "gate": true,
+      "title": {
+        "pt": "Canteiro",
+        "en": "Site setup"
+      },
+      "pt": "Tapume, portão, placa de obra com ART, container de ferramentas, sanitário da equipe, ponto de água, caçambas, energia provisória.",
+      "en": "Perimeter fence, gate, site sign with ART, tool container, crew sanitary, water point, waste bins, temporary power."
+    },
+    {
+      "id": "cameras",
+      "weeks": [
+        1,
+        1
+      ],
+      "partner_ids": [],
+      "gate": true,
+      "title": {
+        "pt": "Perímetro, câmeras e time-lapse",
+        "en": "Perimeter, cameras and time-lapse"
+      },
+      "pt": "Duas câmeras fixas em postes nos cantos opostos e uma PTZ; uplink 4G ou fibra; placas LGPD. A transmissão ao vivo (YouTube, não listada) vai para o grupo privado de investidores no WhatsApp, não para o site. Um registro fotográfico a cada 10 minutos vira o time-lapse publicado aqui depois da entrega e o conjunto de dados, etiquetado por dia e atividade, que treina a revisão por IA das próximas obras.",
+      "en": "Two fixed cameras on poles at opposite corners plus one PTZ; 4G or fibre uplink; LGPD signage. The live stream (YouTube, unlisted) goes to the private investors' WhatsApp group, not to the website. A still frame every 10 minutes becomes the time-lapse published here after handover and the dataset, tagged by day and activity, that trains AI review of the next builds."
+    },
+    {
+      "id": "safety",
+      "weeks": [
+        1,
+        1
+      ],
+      "partner_ids": [],
+      "gate": true,
+      "title": {
+        "pt": "Equipe e segurança",
+        "en": "Crew and safety"
+      },
+      "pt": "NR-18 (PGR ou PCMAT conforme o porte), EPIs, integração, seguro de risco de engenharia e RC, documentação CLT.",
+      "en": "NR-18 (PGR or PCMAT by size), PPE, onboarding, builder's risk and liability insurance, CLT paperwork."
+    },
+    {
+      "id": "kickoff",
+      "weeks": [
+        0.2,
+        0.2
+      ],
+      "partner_ids": [
+        "i9"
+      ],
+      "gate": true,
+      "title": {
+        "pt": "Kick-off",
+        "en": "Kick-off"
+      },
+      "pt": "Plano de 30 dias carregado nesta página, pontos de parada agendados com a responsável técnica, fornecedores confirmados, data do Dia 1 fixada no calendário de dias úteis.",
+      "en": "30-day plan loaded on this page, hold points booked with the engineer of record, suppliers confirmed, Day 1 fixed on the working-day calendar."
+    }
+  ]
+}

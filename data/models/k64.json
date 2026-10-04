@@ -1,0 +1,472 @@
+{
+  "id": "k64",
+  "name": {
+    "pt": "Kiver 64",
+    "en": "Kiver 64"
+  },
+  "footprint": {
+    "w": 8,
+    "l": 8,
+    "floors": 1,
+    "ceiling_m": 3.0,
+    "bay_m": 4
+  },
+  "area_m2": 64,
+  "system": "wood",
+  "system_label": {
+    "pt": "Wood frame de fábrica sobre radier",
+    "en": "Factory wood frame on a radier slab"
+  },
+  "working_days": 30,
+  "crew_peak": 8,
+  "shop_crew": 6,
+  "milestones": {
+    "pour": 5,
+    "assembly": 12,
+    "weathertight": 14,
+    "mep_tested": 17,
+    "handover": 30
+  },
+  "risk_note": {
+    "pt": "A casa fica estanque no dia 12. Os 30 dias incluem a fábrica em paralelo com a cura do radier.",
+    "en": "The house is weathertight on day 12. The 30 days include factory time running in parallel with the slab cure."
+  },
+  "land_note": {
+    "pt": "Lote em loteamento com rede de esgoto dispensa a fossa.",
+    "en": "A lot with sewer service drops the septic system."
+  },
+  "tracks": [
+    {
+      "id": "prefab",
+      "pt": "Pré-fabricação (fora da obra)",
+      "en": "Prefab (off-site)"
+    },
+    {
+      "id": "foundation",
+      "pt": "Fundação",
+      "en": "Foundation"
+    },
+    {
+      "id": "structure",
+      "pt": "Estrutura",
+      "en": "Structure"
+    },
+    {
+      "id": "envelope",
+      "pt": "Envelope",
+      "en": "Envelope"
+    },
+    {
+      "id": "mep",
+      "pt": "Elétrica / hidráulica",
+      "en": "MEP"
+    },
+    {
+      "id": "finishes",
+      "pt": "Acabamentos",
+      "en": "Finishes"
+    },
+    {
+      "id": "options",
+      "pt": "Opcionais",
+      "en": "Options"
+    },
+    {
+      "id": "inspection",
+      "pt": "Vistorias e entrega",
+      "en": "Inspections & handover"
+    }
+  ],
+  "scene": {
+    "builder": "woodFrame",
+    "steps": [
+      {
+        "id": "site",
+        "pt": "Terreno locado",
+        "en": "Site staked"
+      },
+      {
+        "id": "radier_forms",
+        "pt": "Formas do radier",
+        "en": "Radier forms"
+      },
+      {
+        "id": "radier",
+        "pt": "Radier",
+        "en": "Radier slab"
+      },
+      {
+        "id": "panels",
+        "pt": "Painéis e tesouras",
+        "en": "Panels & trusses"
+      },
+      {
+        "id": "roof_tiles",
+        "pt": "Telhado",
+        "en": "Roof"
+      },
+      {
+        "id": "cladding",
+        "pt": "Revestimento",
+        "en": "Cladding"
+      },
+      {
+        "id": "partitions",
+        "pt": "Divisórias",
+        "en": "Partitions"
+      },
+      {
+        "id": "interior_lining",
+        "pt": "Gesso",
+        "en": "Drywall"
+      },
+      {
+        "id": "floor_finish",
+        "pt": "Piso",
+        "en": "Floor"
+      }
+    ]
+  },
+  "scene_factory": {
+    "builder": "woodFrameFactory",
+    "steps": [
+      {
+        "id": "fac_floor",
+        "pt": "Galpão e mesas",
+        "en": "Shop floor and tables"
+      },
+      {
+        "id": "fac_panels",
+        "pt": "Painéis prontos (acumulam por dia)",
+        "en": "Finished panels (stack grows by day)"
+      },
+      {
+        "id": "fac_trusses",
+        "pt": "Tesouras",
+        "en": "Trusses"
+      },
+      {
+        "id": "fac_truck",
+        "pt": "Carreta carregada",
+        "en": "Truck loaded"
+      }
+    ]
+  },
+  "activities": [
+    {
+      "id": "fac_setup",
+      "track": "prefab",
+      "start": 1,
+      "end": 1,
+      "crew": 2,
+      "pt": "Fábrica: gabaritos e mesas preparados para este lote de painéis.",
+      "en": "Factory: jigs and tables set for this panel batch.",
+      "scene_step": "fac_floor",
+      "offsite": true
+    },
+    {
+      "id": "panels_fab",
+      "track": "prefab",
+      "start": 1,
+      "end": 7,
+      "crew": 6,
+      "pt": "Fábrica: painéis de parede em pinus autoclavado @400, OSB 11 mm estrutural, manta, esquadrias já instaladas, eletrodutos passados.",
+      "en": "Factory: wall panels in treated pine @400, 11 mm structural OSB, wrap, windows installed, conduits pre-run.",
+      "scene_step": "fac_panels",
+      "offsite": true
+    },
+    {
+      "id": "trusses_fab",
+      "track": "prefab",
+      "start": 5,
+      "end": 8,
+      "crew": 3,
+      "pt": "Fábrica: tesouras de pinus.",
+      "en": "Factory: pine roof trusses.",
+      "scene_step": "fac_trusses",
+      "offsite": true
+    },
+    {
+      "id": "pack",
+      "track": "prefab",
+      "start": 9,
+      "end": 10,
+      "crew": 2,
+      "pt": "Embalagem, carregamento, transporte ao lote (largura máxima 2,60 m).",
+      "en": "Packing, loading, transport to the lot (2.60 m max width).",
+      "scene_step": "fac_truck",
+      "offsite": true
+    },
+    {
+      "id": "stakeout",
+      "track": "foundation",
+      "start": 1,
+      "end": 1,
+      "crew": 2,
+      "pt": "Locação, gabarito, níveis. Câmeras ligadas.",
+      "en": "Stakeout, batter boards, levels. Cameras live.",
+      "scene_step": "site"
+    },
+    {
+      "id": "earth",
+      "track": "foundation",
+      "start": 2,
+      "end": 3,
+      "crew": 3,
+      "pt": "Terraplenagem, base compactada, formas do radier.",
+      "en": "Earthworks, compacted base, radier forms.",
+      "scene_step": "radier_forms"
+    },
+    {
+      "id": "mep_under",
+      "track": "mep",
+      "start": 3,
+      "end": 4,
+      "crew": 2,
+      "pt": "Esgoto, água e eletrodutos sob o radier.",
+      "en": "Sewer, water and conduits under the slab.",
+      "hold_point": {
+        "pt": "Ponto de parada: vistoria das redes e da malha antes da concretagem.",
+        "en": "Hold point: under-slab runs and mesh inspected before the pour.",
+        "by": "engineer"
+      }
+    },
+    {
+      "id": "pour",
+      "track": "foundation",
+      "start": 5,
+      "end": 5,
+      "crew": 4,
+      "pt": "Concretagem do radier (10 cm, malha).",
+      "en": "Radier pour (10 cm, mesh).",
+      "scene_step": "radier"
+    },
+    {
+      "id": "cure",
+      "track": "foundation",
+      "start": 6,
+      "end": 11,
+      "crew": 0,
+      "pt": "Cura. Fábrica segue em paralelo.",
+      "en": "Cure. Factory keeps working in parallel."
+    },
+    {
+      "id": "assembly",
+      "track": "structure",
+      "start": 12,
+      "end": 12,
+      "crew": 8,
+      "pt": "DIA DE MONTAGEM: painéis ancorados ao radier, tesouras, contraventamento, telhado fechado até o fim do dia.",
+      "en": "ASSEMBLY DAY: panels anchored to the slab, trusses, bracing, roof closed by end of day.",
+      "scene_step": "panels",
+      "hold_point": {
+        "pt": "Ponto de parada: ancoragens e prumo conferidos pela responsável técnica.",
+        "en": "Hold point: anchors and plumb checked by the engineer of record.",
+        "by": "engineer"
+      }
+    },
+    {
+      "id": "roof",
+      "track": "envelope",
+      "start": 13,
+      "end": 14,
+      "crew": 3,
+      "pt": "Telhas de fibrocimento, cumeeira, calhas.",
+      "en": "Fibre cement roof tiles, ridge, gutters.",
+      "scene_step": "roof_tiles",
+      "hold_point": {
+        "pt": "Ponto de parada: casa estanque.",
+        "en": "Hold point: weathertight.",
+        "by": "engineer"
+      }
+    },
+    {
+      "id": "cladding",
+      "track": "envelope",
+      "start": 14,
+      "end": 18,
+      "crew": 3,
+      "pt": "Ripas da câmara ventilada, placa cimentícia, textura (aparência de alvenaria).",
+      "en": "Battens, cement board, textured render look.",
+      "scene_step": "cladding"
+    },
+    {
+      "id": "mep_rough",
+      "track": "mep",
+      "start": 13,
+      "end": 16,
+      "crew": 2,
+      "pt": "Ligações elétricas e hidráulicas nos painéis; quadro; caixa d'água.",
+      "en": "Electrical and hydraulic connections in the panels; panel board; water tank."
+    },
+    {
+      "id": "partitions",
+      "track": "envelope",
+      "start": 15,
+      "end": 16,
+      "crew": 2,
+      "pt": "Divisórias internas.",
+      "en": "Interior partitions.",
+      "scene_step": "partitions"
+    },
+    {
+      "id": "mep_test",
+      "track": "mep",
+      "start": 17,
+      "end": 17,
+      "crew": 2,
+      "pt": "Testes de pressão e elétricos.",
+      "en": "Pressure and electrical tests.",
+      "hold_point": {
+        "pt": "Ponto de parada: laudo MEP antes do gesso.",
+        "en": "Hold point: MEP report before drywall.",
+        "by": "engineer"
+      }
+    },
+    {
+      "id": "insulation",
+      "track": "envelope",
+      "start": 17,
+      "end": 17,
+      "crew": 2,
+      "pt": "Lã de PET nas externas.",
+      "en": "PET wool in external walls."
+    },
+    {
+      "id": "drywall",
+      "track": "finishes",
+      "start": 18,
+      "end": 20,
+      "crew": 3,
+      "pt": "Gesso acartonado, tratamento de juntas.",
+      "en": "Drywall, joint treatment.",
+      "scene_step": "interior_lining"
+    },
+    {
+      "id": "ceiling",
+      "track": "finishes",
+      "start": 21,
+      "end": 21,
+      "crew": 2,
+      "pt": "Forro de PVC.",
+      "en": "PVC ceiling."
+    },
+    {
+      "id": "floor",
+      "track": "finishes",
+      "start": 21,
+      "end": 23,
+      "crew": 3,
+      "pt": "Piso cerâmico e rodapé.",
+      "en": "Ceramic floor and skirting.",
+      "scene_step": "floor_finish"
+    },
+    {
+      "id": "paint",
+      "track": "finishes",
+      "start": 23,
+      "end": 26,
+      "crew": 2,
+      "pt": "Pintura interna e externa.",
+      "en": "Interior and exterior painting."
+    },
+    {
+      "id": "kitchen_bath",
+      "track": "finishes",
+      "start": 24,
+      "end": 26,
+      "crew": 2,
+      "pt": "Cozinha e banheiro: pia, bancada, louças, metais.",
+      "en": "Kitchen and bathroom: sink, counter, sanitary ware, taps."
+    },
+    {
+      "id": "doors_int",
+      "track": "finishes",
+      "start": 25,
+      "end": 25,
+      "crew": 1,
+      "pt": "Portas internas.",
+      "en": "Internal doors."
+    },
+    {
+      "id": "fixtures",
+      "track": "finishes",
+      "start": 27,
+      "end": 27,
+      "crew": 2,
+      "pt": "Tomadas, interruptores, luminárias.",
+      "en": "Sockets, switches, luminaires."
+    },
+    {
+      "id": "commission",
+      "track": "inspection",
+      "start": 28,
+      "end": 28,
+      "crew": 2,
+      "pt": "Vistoria final, pendências, fotos as-built, arquivo das câmeras.",
+      "en": "Final inspection, punch list, as-built photos, camera archive.",
+      "hold_point": {
+        "pt": "Aceite da responsável técnica; habite-se protocolado.",
+        "en": "Engineer sign-off; habite-se filed.",
+        "by": "engineer"
+      }
+    },
+    {
+      "id": "buffer",
+      "track": "inspection",
+      "start": 29,
+      "end": 29,
+      "crew": 0,
+      "pt": "Folga de programação (chuva, logística).",
+      "en": "Schedule buffer (rain, logistics)."
+    },
+    {
+      "id": "handover",
+      "track": "inspection",
+      "start": 30,
+      "end": 30,
+      "crew": 2,
+      "pt": "Limpeza, chaves, manual, ligações definitivas.",
+      "en": "Clean, keys, manual, permanent connections.",
+      "hold_point": {
+        "pt": "Entrega.",
+        "en": "Handover.",
+        "by": "owner"
+      }
+    }
+  ],
+  "crew_by_day": [
+    2,
+    3,
+    5,
+    2,
+    4,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    8,
+    5,
+    8,
+    7,
+    7,
+    7,
+    6,
+    3,
+    3,
+    5,
+    3,
+    5,
+    4,
+    5,
+    4,
+    2,
+    2,
+    0,
+    2
+  ],
+  "days_over_peak": [],
+  "crew_peak_observed": 8
+}

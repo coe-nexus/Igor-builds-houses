@@ -1,0 +1,23 @@
+{
+  "title": {
+    "pt": "Obras concluídas em time-lapse",
+    "en": "Completed builds in time-lapse"
+  },
+  "intro": {
+    "pt": "Cada obra concluída entra aqui como um vídeo de 60 a 90 segundos, do Dia 1 à entrega. Enquanto não houver vídeos, esta seção fica oculta.",
+    "en": "Every completed build lands here as a 60 to 90 second video, Day 1 to handover. While there are no videos, this section stays hidden."
+  },
+  "items": [],
+  "example_item_not_rendered": {
+    "id": "lote40-k96",
+    "model": "k96",
+    "title": {
+      "pt": "Lote 40, Kiver 96, Joinville",
+      "en": "Lote 40, Kiver 96, Joinville"
+    },
+    "youtube_id": "REPLACE_WITH_VIDEO_ID",
+    "completed_on": "2026-12-15",
+    "working_days_actual": 30,
+    "location": "Joinville, SC"
+  }
+}

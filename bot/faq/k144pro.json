@@ -1,0 +1,60 @@
+{
+  "scope": "k144pro",
+  "items": [
+    {
+      "id": "144p_01",
+      "q": {
+        "pt": "Para que família é o 144 Pro?",
+        "en": "Who is the 144 Pro for?"
+      },
+      "a": {
+        "pt": "288 m² em dois pavimentos, cinco quartos, quatro banheiros, pé-direito de 3 m. Casa de família grande ou casa de praia para três gerações.",
+        "en": "288 m² on two floors, five bedrooms, four bathrooms, 3 m ceilings. A large family home or a beach house for three generations."
+      }
+    },
+    {
+      "id": "144p_02",
+      "q": {
+        "pt": "Que opcionais fazem sentido?",
+        "en": "Which options make sense?"
+      },
+      "a": {
+        "pt": "Terraço, garagem, solar com baterias, piscina, cozinha gourmet, cisterna. Na página cada um mostra quanto do valor sobrevive à revenda.",
+        "en": "Terrace, carport, solar with batteries, pool, gourmet kitchen, cistern. On the page each one shows how much of its value survives resale."
+      }
+    },
+    {
+      "id": "144p_03",
+      "q": {
+        "pt": "Lote mínimo?",
+        "en": "Minimum lot?"
+      },
+      "a": {
+        "pt": "15 x 20 m. O footprint é 12 x 12 m mais recuos.",
+        "en": "15 x 20 m. Footprint is 12 x 12 m plus setbacks."
+      }
+    },
+    {
+      "id": "144p_04",
+      "q": {
+        "pt": "Serve para residência por investimento?",
+        "en": "Does it work for residency by investment?"
+      },
+      "a": {
+        "pt": "Pelo valor, um 144 Pro costuma atingir o mínimo exigido para o visto de investidor imobiliário no Sul. Confirmação com advogado de imigração; indicamos.",
+        "en": "By value, a 144 Pro usually clears the minimum for the real estate investor visa in the South. Confirmation with an immigration lawyer; we refer."
+      }
+    },
+    {
+      "id": "144p_05",
+      "q": {
+        "pt": "Dá para alugar por temporada?",
+        "en": "Can it be a short-term rental?"
+      },
+      "a": {
+        "pt": "Sim; no litoral norte é o uso mais comum. O cronograma de 30 dias permite entregar antes da temporada se a due diligence começar até agosto.",
+        "en": "Yes; on the northern coast it is the most common use. The 30-day schedule lets us deliver before the season if due diligence starts by August."
+      }
+    }
+  ]
+}

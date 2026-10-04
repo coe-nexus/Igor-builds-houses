@@ -1,0 +1,200 @@
+{
+  "scope": "all",
+  "items": [
+    {
+      "id": "c01",
+      "q": {
+        "pt": "O que são 30 dias úteis?",
+        "en": "What are 30 working days?",
+        "ru": "Что такое 30 рабочих дней?"
+      },
+      "a": {
+        "pt": "Dias de obra de segunda a sexta, sem feriados. São cerca de sete semanas de calendário. O relógio começa no Dia 1, depois da due diligence (alvará, solo, ligações, compras, câmeras).",
+        "en": "Build days Monday to Friday, no holidays. About seven calendar weeks. The clock starts on Day 1, after due diligence (permit, soil, connections, procurement, cameras).",
+        "ru": "Дни стройки с понедельника по пятницу, без праздников. Около семи календарных недель. Отсчёт начинается с Дня 1, после подготовительного этапа (разрешение, грунт, подключения, закупки, камеры)."
+      }
+    },
+    {
+      "id": "c02",
+      "q": {
+        "pt": "Quanto tempo leva a due diligence antes do Dia 1?",
+        "en": "How long is due diligence before Day 1?",
+        "ru": "Сколько длится подготовка до Дня 1?"
+      },
+      "a": {
+        "pt": "Normalmente de 6 a 10 semanas. O caminho crítico é o alvará e o prazo das esquadrias. Está na página, passo a passo.",
+        "en": "Usually 6 to 10 weeks. The critical path is the permit and window lead time. It is on the page, step by step.",
+        "ru": "Обычно 6 до 10 недель. Критический путь: разрешение на строительство и срок поставки окон. Всё расписано на странице по шагам."
+      }
+    },
+    {
+      "id": "c03",
+      "q": {
+        "pt": "E se chover?",
+        "en": "What if it rains?",
+        "ru": "А если дождь?"
+      },
+      "a": {
+        "pt": "A estrutura é montada em dias; a casa fica estanque cedo (dia 16 no 96, dia 12 no 64). Depois disso a chuva não para a obra. Antes disso há folga no cronograma.",
+        "en": "The structure goes up in days; the house is weathertight early (day 16 on the 96, day 12 on the 64). After that rain does not stop work. Before that there is float in the schedule.",
+        "ru": "Каркас собирается за дни; дом рано закрывается от непогоды (16-й день для 96, 12-й для 64). После этого дождь стройку не останавливает. До этого в графике есть запас."
+      }
+    },
+    {
+      "id": "c04",
+      "q": {
+        "pt": "Quem assina a obra?",
+        "en": "Who signs off the build?",
+        "ru": "Кто отвечает за стройку?"
+      },
+      "a": {
+        "pt": "Uma engenheira civil responsável técnica, com ART recolhida. Há pontos de parada com vistoria dela: armação, estrutura, estanqueidade, testes elétricos e hidráulicos, entrega.",
+        "en": "A civil engineer of record, with the ART filed. There are hold points she inspects: rebar, structure, weathertight, MEP tests, handover.",
+        "ru": "Инженер-строитель, ответственное лицо по бразильскому реестру (ART). Есть контрольные точки с её проверкой: арматура, каркас, герметичность, испытания электрики и воды, сдача."
+      }
+    },
+    {
+      "id": "c05",
+      "q": {
+        "pt": "Aço enferruja? Qual a durabilidade?",
+        "en": "Does steel rust? How long does it last?",
+        "ru": "Сталь ржавеет? Какой срок службы?"
+      },
+      "a": {
+        "pt": "O aço estrutural é pintado e fica fora do contato com água; a parede é ventilada (manta, câmara de ar, siding). Projetado para a NBR 15575, que define vida útil mínima por sistema. Manutenção: revisão de pintura e selantes a cada 5 anos.",
+        "en": "Structural steel is painted and kept out of contact with water; the wall is ventilated (wrap, air cavity, siding). Designed to NBR 15575, which sets minimum service life per system. Maintenance: paint and sealant check every 5 years.",
+        "ru": "Несущая сталь окрашена и не контактирует с водой; стена вентилируемая (мембрана, воздушный зазор, сайдинг). Проект по NBR 15575, которая задаёт минимальный срок службы систем. Обслуживание: проверка покраски и герметиков раз в 5 лет."
+      }
+    },
+    {
+      "id": "c06",
+      "q": {
+        "pt": "Tem garantia?",
+        "en": "Is there a warranty?",
+        "ru": "Есть гарантия?"
+      },
+      "a": {
+        "pt": "Garantia legal de solidez e segurança (Código Civil) e prazos por sistema conforme a NBR 15575 e o manual do proprietário entregue no dia 30.",
+        "en": "Legal warranty for structural soundness (Civil Code) plus per-system periods under NBR 15575 and the owner's manual delivered on day 30.",
+        "ru": "Законная гарантия на прочность и безопасность (Гражданский кодекс Бразилии) плюс сроки по системам согласно NBR 15575 и руководство владельца, которое выдаётся в день 30."
+      }
+    },
+    {
+      "id": "c07",
+      "q": {
+        "pt": "Posso mudar a planta?",
+        "en": "Can I change the floor plan?",
+        "ru": "Можно изменить планировку?"
+      },
+      "a": {
+        "pt": "Dentro da malha de 4 m, sim: divisórias, cozinha, banheiros. Fachada e estrutura são padrão; é isso que permite 30 dias.",
+        "en": "Within the 4 m grid, yes: partitions, kitchen, bathrooms. Facade and structure are standard; that is what makes 30 days possible.",
+        "ru": "В пределах сетки 4 м, да: перегородки, кухня, санузлы. Фасад и каркас стандартные; именно это даёт 30 дней."
+      }
+    },
+    {
+      "id": "c08",
+      "q": {
+        "pt": "Como funciona o pagamento?",
+        "en": "How does payment work?",
+        "ru": "Как устроена оплата?"
+      },
+      "a": {
+        "pt": "Por marcos que coincidem com as vistorias: na assinatura, no anel de aço, na casa estanque e na entrega. Os percentuais ficam na proposta.",
+        "en": "By milestones that match the inspections: at signing, at the steel ring, at weathertight and at handover. Percentages are in the proposal.",
+        "ru": "По этапам, совпадающим с проверками: при подписании, при установке стального кольца, при закрытии от непогоды и при сдаче. Проценты указаны в предложении."
+      }
+    },
+    {
+      "id": "c09",
+      "q": {
+        "pt": "Vocês constroem fora de Joinville?",
+        "en": "Do you build outside Joinville?",
+        "ru": "Строите за пределами Жоинвиля?"
+      },
+      "a": {
+        "pt": "Litoral norte de SC e interior de SP primeiro. Fora disso depende de logística e parceiro local. Caso a caso.",
+        "en": "Northern SC coast and interior São Paulo first. Beyond that it depends on logistics and a local partner. Case by case.",
+        "ru": "Сначала северное побережье штата Санта-Катарина и внутренние районы Сан-Паулу. Дальше зависит от логистики и местного партнёра. Индивидуально."
+      }
+    },
+    {
+      "id": "c10",
+      "q": {
+        "pt": "O que são as câmeras?",
+        "en": "What are the cameras?",
+        "ru": "Что за камеры?"
+      },
+      "a": {
+        "pt": "Duas câmeras fixas e uma PTZ filmam a obra inteira. A transmissão ao vivo é privada: proprietário e investidores acompanham por link no grupo de WhatsApp. Depois da entrega, o time-lapse da obra é publicado no site. As gravações, etiquetadas por dia e atividade, treinam a revisão por IA das próximas obras. Placas LGPD no canteiro.",
+        "en": "Two fixed cameras and one PTZ film the whole build. The live stream is private: owner and investors follow by link in the WhatsApp group. After handover, the time-lapse is published on the site. The footage, tagged by day and activity, trains AI review of future builds. LGPD signage on site.",
+        "ru": "Две стационарные камеры и одна поворотная снимают всю стройку. Трансляция приватная: владелец и инвесторы смотрят по ссылке в группе WhatsApp. После сдачи таймлапс публикуется на сайте. Записи, размеченные по дням и работам, обучают ИИ-проверку следующих строек. На площадке таблички о видеосъёмке (LGPD)."
+      }
+    },
+    {
+      "id": "c11",
+      "q": {
+        "pt": "O que acontece na sessão de 15 minutos?",
+        "en": "What happens in the 15-minute session?",
+        "ru": "Что происходит на 15-минутной встрече?"
+      },
+      "a": {
+        "pt": "Você conta o seu caso; nós mostramos o modelo certo, o cronograma, as três formas de entrar (sua casa no seu lote, casa pronta, ou investir num lote de casas) e os números, por escrito. Saímos com o próximo passo marcado.",
+        "en": "You tell us your case; we show the right model, the schedule, the three ways in (your house on your lot, a finished house, or investing in a batch) and the numbers, in writing. We leave with the next step booked.",
+        "ru": "Вы рассказываете свой случай; мы показываем подходящую модель, график, три способа войти (ваш дом на вашем участке, готовый дом или инвестиция в партию домов) и цифры, письменно. Расходимся с назначенным следующим шагом."
+      }
+    },
+    {
+      "id": "c12",
+      "q": {
+        "pt": "Vocês garantem rentabilidade?",
+        "en": "Do you guarantee returns?",
+        "ru": "Вы гарантируете доходность?"
+      },
+      "a": {
+        "pt": "Não, e ninguém sério garante. Na sessão apresentamos o modelo de contas, as garantias reais (lotes, casas em obra, garantia pessoal) e os riscos. Por escrito.",
+        "en": "No, and no serious party does. In the session we present the model, the real collateral (lots, houses under construction, personal guarantee) and the risks. In writing.",
+        "ru": "Нет, и никто серьёзный не гарантирует. На встрече мы показываем модель расчётов, реальное обеспечение (участки, дома в стройке, личное поручительство) и риски. Письменно."
+      }
+    },
+    {
+      "id": "c13",
+      "q": {
+        "pt": "Estou no exterior. Posso comprar ou investir no Brasil?",
+        "en": "I am abroad. Can I buy or invest in Brazil?",
+        "ru": "Я за рубежом. Могу ли я купить или инвестировать в Бразилии?"
+      },
+      "a": {
+        "pt": "Sim. Estrangeiros podem ter imóveis urbanos no Brasil. É preciso CPF, um representante no país e trazer os recursos por banco com a finalidade declarada; investimento em sociedade é registrado no Banco Central. Coordenamos com advogados e com o banco. Conversa em inglês ou russo.",
+        "en": "Yes. Foreigners can own urban property in Brazil. You need a CPF, a representative in the country, and the funds must come in through a bank with the purpose declared; investment in a company is registered with the Central Bank. We coordinate with lawyers and the bank. Conversation in English or Russian.",
+        "ru": "Да. Иностранцы могут владеть городской недвижимостью в Бразилии. Нужны CPF, представитель в стране и ввод средств через банк с указанием цели; инвестиции в компанию регистрируются в Центральном банке. Мы координируем работу с юристами и банком. Общение на английском или русском."
+      }
+    },
+    {
+      "id": "c14",
+      "q": {
+        "pt": "Somos um fundo / PE. Como trabalham conosco?",
+        "en": "We are a fund / PE firm. How do you work with us?",
+        "ru": "Мы фонд / PE-компания. Как вы с нами работаете?"
+      },
+      "a": {
+        "pt": "Como parceiro de originação e desenvolvimento na América Latina: encontramos terrenos e lotes, licenciamos, construímos com o sistema de 30 dias e operamos o ativo. Entrada por lote de casas ou por projeto, em SPE. A conversa é de 30 minutos com um sócio, não com o assistente.",
+        "en": "As your sourcing and development partner in Latin America: we find land and lots, permit, build with the 30-day system and operate the asset. Entry by batch of houses or by project, through an SPV. The conversation is 30 minutes with a partner, not with the assistant.",
+        "ru": "Как ваш партнёр по поиску объектов и девелопменту в Латинской Америке: находим землю и участки, получаем разрешения, строим по 30-дневной системе и управляем активом. Вход через партию домов или через проект, в SPV. Разговор на 30 минут с партнёром, а не с ассистентом."
+      }
+    },
+    {
+      "id": "c15",
+      "q": {
+        "pt": "Por que perguntam quem eu sou antes de falar de números?",
+        "en": "Why do you ask who I am before talking numbers?",
+        "ru": "Почему вы спрашиваете, кто я, прежде чем говорить о цифрах?"
+      },
+      "a": {
+        "pt": "Porque conversa de investimento é privada, com partes identificadas, no Brasil e no país do investidor. O site mostra o que é possível construir e para quem; os termos aparecem por escrito, para pessoas que conhecemos. É o caminho discreto, e é o único que funciona.",
+        "en": "Because investment conversations are private, with identified parties, in Brazil and in the investor's country. The website shows what can be built and for whom; terms appear in writing, for people we know. It is the quiet path, and it is the only one that works.",
+        "ru": "Потому что разговор об инвестициях, приватный, с идентифицированными сторонами, и в Бразилии, и в стране инвестора. Сайт показывает, что можно построить и для кого; условия появляются письменно, для людей, которых мы знаем. Это тихий путь, и только он работает."
+      }
+    }
+  ]
+}

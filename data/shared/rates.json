@@ -1,0 +1,109 @@
+{
+  "title": {
+    "pt": "Custos por m² em Santa Catarina: elétrica, hidráulica, sanitário",
+    "en": "Per m² costs in Santa Catarina: electrical, hydraulic, sanitary"
+  },
+  "basis": {
+    "pt": "Referência pública: SINAPI-SC (Caixa/IBGE), tabela de Santa Catarina. Na prática o mercado cobra de 1 a 3 vezes esse valor conforme a qualidade do serviço e do material. Os valores Kiver abaixo são o nosso padrão para SC, outubro de 2026, materiais instalados pela equipe própria. Planejamento, não orçamento.",
+    "en": "Public reference: SINAPI-SC (Caixa/IBGE), the Santa Catarina table. In practice the market charges 1 to 3 times that figure depending on quality of work and materials. The Kiver figures below are our SC standard, October 2026, materials installed by our own crew. Planning, not a quote."
+  },
+  "currency": "BRL",
+  "public": true,
+  "items": [
+    {
+      "id": "elec_mat",
+      "label": {
+        "pt": "Elétrica, materiais",
+        "en": "Electrical, materials"
+      },
+      "unit": "R$/m²",
+      "value": 90,
+      "verify": true,
+      "reference": "SINAPI-SC"
+    },
+    {
+      "id": "hyd_mat",
+      "label": {
+        "pt": "Hidráulica e sanitária, materiais",
+        "en": "Hydraulic and sanitary, materials"
+      },
+      "unit": "R$/m²",
+      "value": 70,
+      "verify": true,
+      "reference": "SINAPI-SC"
+    },
+    {
+      "id": "mep_labour",
+      "label": {
+        "pt": "Mão de obra elétrica e hidráulica (equipe própria)",
+        "en": "MEP labour (own crew)"
+      },
+      "unit": "R$/m²",
+      "value": 45,
+      "verify": true,
+      "reference": "SINAPI-SC"
+    },
+    {
+      "id": "septic",
+      "label": {
+        "pt": "Fossa séptica, filtro e sumidouro (quando não há rede)",
+        "en": "Septic tank, filter and soakaway (no sewer)"
+      },
+      "unit": "R$/un",
+      "value": 5500,
+      "verify": true,
+      "reference": "SINAPI-SC"
+    },
+    {
+      "id": "tank",
+      "label": {
+        "pt": "Caixa d'água e suporte",
+        "en": "Water tank and stand"
+      },
+      "unit": "R$/un",
+      "value": 2500,
+      "verify": true,
+      "reference": "SINAPI-SC"
+    },
+    {
+      "id": "celesc_entry",
+      "label": {
+        "pt": "Padrão de entrada Celesc (estimativa)",
+        "en": "Celesc service entrance (estimate)"
+      },
+      "unit": "R$/un",
+      "value": 3500,
+      "verify": true,
+      "reference": "SINAPI-SC"
+    },
+    {
+      "id": "water_conn",
+      "label": {
+        "pt": "Ligação de água e esgoto (taxa da concessionária)",
+        "en": "Water and sewer connection (utility fee)"
+      },
+      "unit": "R$/un",
+      "value": null,
+      "verify": true,
+      "note": {
+        "pt": "consultar",
+        "en": "on request"
+      },
+      "reference": "SINAPI-SC"
+    }
+  ],
+  "house_prices_public": false,
+  "request_label": {
+    "pt": "Pedir proposta",
+    "en": "Request a quote"
+  },
+  "market_multiplier_note": {
+    "range": [
+      1,
+      3
+    ],
+    "pt": "Faixa de mercado: 1x a 3x o SINAPI-SC, conforme qualidade.",
+    "en": "Market range: 1x to 3x SINAPI-SC, depending on quality."
+  },
+  "state": "SC"
+}

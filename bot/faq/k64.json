@@ -1,0 +1,71 @@
+{
+  "scope": "k64",
+  "items": [
+    {
+      "id": "64_01",
+      "q": {
+        "pt": "Me encaixo no Minha Casa Minha Vida?",
+        "en": "Do I fit Minha Casa Minha Vida?"
+      },
+      "a": {
+        "pt": "Em 2026 o programa atende renda familiar até R$ 13 mil em quatro faixas; nas faixas 1 e 2 há subsídio de até R$ 55 mil. A casa precisa caber no teto do seu município. Me diga renda familiar e cidade e eu aponto a faixa; a Caixa confirma.",
+        "en": "In 2026 the program covers family income up to R$13,000 in four bands; bands 1 and 2 carry a subsidy of up to R$55,000. The house must fit your município's price cap. Tell me family income and city and I will point to the band; Caixa confirms."
+      }
+    },
+    {
+      "id": "64_02",
+      "q": {
+        "pt": "Casa de madeira é segura? Parece casa de madeira?",
+        "en": "Is a wood house safe? Does it look like a wood house?"
+      },
+      "a": {
+        "pt": "É wood frame: pinus tratado em autoclave, OSB estrutural, manta, placa cimentícia com textura. Por fora parece alvenaria. A norma é a NBR 16936.",
+        "en": "It is wood frame: autoclave-treated pine, structural OSB, wrap, cement board with textured render. From outside it looks like masonry. The standard is NBR 16936."
+      }
+    },
+    {
+      "id": "64_03",
+      "q": {
+        "pt": "Montada em um dia?",
+        "en": "Assembled in one day?"
+      },
+      "a": {
+        "pt": "Os painéis são feitos na fábrica enquanto o radier cura. No dia 12 a casa é montada e fica coberta até o fim do dia. Os acabamentos levam mais 18 dias úteis.",
+        "en": "Panels are built in the factory while the slab cures. On day 12 the house is assembled and roofed by end of day. Finishes take another 18 working days."
+      }
+    },
+    {
+      "id": "64_04",
+      "q": {
+        "pt": "A Caixa financia esse sistema?",
+        "en": "Does Caixa finance this system?"
+      },
+      "a": {
+        "pt": "Wood frame com norma e avaliação técnica é financiado pela Caixa; há precedente desde 2013. Nosso projeto segue a NBR 16936 e a avaliação de desempenho exigida.",
+        "en": "Wood frame with a standard and technical evaluation is financed by Caixa; there is precedent since 2013. Our design follows NBR 16936 and the required performance evaluation."
+      }
+    },
+    {
+      "id": "64_05",
+      "q": {
+        "pt": "Quantos quartos?",
+        "en": "How many bedrooms?"
+      },
+      "a": {
+        "pt": "Dois quartos, um banheiro, sala e cozinha integradas, 64 m², pé-direito de 3 m.",
+        "en": "Two bedrooms, one bathroom, open living and kitchen, 64 m², 3 m ceilings."
+      }
+    },
+    {
+      "id": "64_06",
+      "q": {
+        "pt": "Posso usar o FGTS?",
+        "en": "Can I use my FGTS?"
+      },
+      "a": {
+        "pt": "Sim, dentro das regras do programa: entrada, amortização ou parcelas. A Caixa valida no processo.",
+        "en": "Yes, within the program rules: down payment, amortization or instalments. Caixa validates in the process."
+      }
+    }
+  ]
+}

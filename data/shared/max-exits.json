@@ -1,0 +1,44 @@
+{
+  "title": {
+    "pt": "Uma casa, três saídas",
+    "en": "One house, three exits"
+  },
+  "intro": {
+    "pt": "O Max é construído uma vez, como residência de quatro pavimentos, com poço de elevador, prumadas por andar, medidores separados e lajes corta-fogo já na estrutura. Converter depois em 4 ou 8 apartamentos é acabamento e cartório, não demolição.",
+    "en": "The Max is built once, as a four-floor residence, with the elevator shaft, per-floor risers, separate meters and fire-rated floors already in the structure. Converting later into 4 or 8 apartments is fit-out and paperwork, not demolition."
+  },
+  "exits": [
+    {
+      "id": "a",
+      "units": 1,
+      "m2_per_unit": 576,
+      "label": {
+        "pt": "Residência única",
+        "en": "Single residence"
+      }
+    },
+    {
+      "id": "b",
+      "units": 4,
+      "m2_per_unit": 144,
+      "label": {
+        "pt": "4 apartamentos de 144 m²",
+        "en": "4 apartments of 144 m²"
+      }
+    },
+    {
+      "id": "c",
+      "units": 8,
+      "m2_per_unit": 72,
+      "label": {
+        "pt": "8 apartamentos de 72 m²",
+        "en": "8 apartments of 72 m²"
+      }
+    }
+  ],
+  "legal": {
+    "pt": "Lote zoneado para quatro pavimentos; PPCI; NBR 9050; DATec para o sistema de paredes acima de dois pavimentos (o esqueleto de aço é NBR 8800).",
+    "en": "Lot zoned for four floors; fire (PPCI); NBR 9050 accessibility; DATec for the wall system above two storeys (the steel skeleton is NBR 8800)."
+  },
+  "working_days": 45
+}

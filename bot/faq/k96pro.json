@@ -1,0 +1,60 @@
+{
+  "scope": "k96pro",
+  "items": [
+    {
+      "id": "96p_01",
+      "q": {
+        "pt": "Dois pavimentos em 30 dias?",
+        "en": "Two floors in 30 days?"
+      },
+      "a": {
+        "pt": "Sim, com equipe de 12 e guindaste leve nos dias 15 e 16. Estanque no dia 20, entrega no dia 30. O Lote 39 é a obra de referência.",
+        "en": "Yes, with a crew of 12 and a light crane on days 15 and 16. Weathertight on day 20, handover on day 30. Lote 39 is the reference build."
+      }
+    },
+    {
+      "id": "96p_02",
+      "q": {
+        "pt": "Quantos quartos?",
+        "en": "How many bedrooms?"
+      },
+      "a": {
+        "pt": "Quatro quartos, três banheiros, 192 m² em 8 x 12 m. Escada metálica.",
+        "en": "Four bedrooms, three bathrooms, 192 m² on 8 x 12 m. Metal stair."
+      }
+    },
+    {
+      "id": "96p_03",
+      "q": {
+        "pt": "Dá para fazer duas unidades, uma por andar?",
+        "en": "Can it be two units, one per floor?"
+      },
+      "a": {
+        "pt": "Com entradas separadas e medidores, sim, se o zoneamento permitir duas unidades no lote. Decide-se no projeto, antes do Dia 1.",
+        "en": "With separate entrances and meters, yes, if zoning allows two units on the lot. Decided in design, before Day 1."
+      }
+    },
+    {
+      "id": "96p_04",
+      "q": {
+        "pt": "Por que o segundo andar sai mais barato por m²?",
+        "en": "Why is the second floor cheaper per m²?"
+      },
+      "a": {
+        "pt": "Fundação, cobertura e terreno já estão pagos pelo térreo. O m² de cima custa menos e vale o mesmo. É a lógica do Pro.",
+        "en": "Foundation, roof and land are already paid for by the ground floor. The upper m² costs less and is worth the same. That is the Pro logic."
+      }
+    },
+    {
+      "id": "96p_05",
+      "q": {
+        "pt": "Qual lote mínimo?",
+        "en": "Minimum lot?"
+      },
+      "a": {
+        "pt": "12 x 25 m confortável; 12 x 20 m com recuos mínimos. Confirmamos na due diligence.",
+        "en": "12 x 25 m is comfortable; 12 x 20 m with minimum setbacks. Confirmed in due diligence."
+      }
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "scope": "k96",
+  "items": [
+    {
+      "id": "96_01",
+      "q": {
+        "pt": "Posso construir no meu lote?",
+        "en": "Can I build on my lot?"
+      },
+      "a": {
+        "pt": "Sim. Mande a cidade e, se tiver, a matrícula ou o IPTU. Checamos zoneamento e recuos na due diligence. Lote mínimo confortável: 12 x 25 m.",
+        "en": "Yes. Send the city and, if you have it, the title or IPTU. We check zoning and setbacks in due diligence. Comfortable minimum lot: 12 x 25 m."
+      }
+    },
+    {
+      "id": "96_02",
+      "q": {
+        "pt": "O que está incluído?",
+        "en": "What is included?"
+      },
+      "a": {
+        "pt": "Estrutura de aço, piso elevado em compensado naval com SPC, paredes com copaíba, manta e siding, telha sanduíche, esquadrias de alumínio, elétrica e hidráulica completas, cozinha e dois banheiros básicos, pintura. Terraço, garagem e solar são opcionais.",
+        "en": "Steel structure, raised floor in naval plywood with SPC, walls with copaíba, wrap and siding, sandwich roof, aluminium windows, full electrical and plumbing, basic kitchen and two bathrooms, painting. Terrace, carport and solar are options."
+      }
+    },
+    {
+      "id": "96_03",
+      "q": {
+        "pt": "Vale a pena o terraço?",
+        "en": "Is the terrace worth it?"
+      },
+      "a": {
+        "pt": "É o opcional que mais retorna: 17 m² cobertos contam como área privativa e o comprador paga perto do m² da casa. Na revenda retém o valor inteiro.",
+        "en": "It is the option that pays back most: 17 covered m² count as private area and buyers pay close to the house's m² rate. It retains full value at resale."
+      }
+    },
+    {
+      "id": "96_04",
+      "q": {
+        "pt": "Por que piso elevado?",
+        "en": "Why a raised floor?"
+      },
+      "a": {
+        "pt": "Nenhum contato da casa com o solo: ventilação, inspeção fácil das instalações, e nenhuma laje para curar. É parte do porquê de 30 dias.",
+        "en": "No contact between house and ground: ventilation, easy inspection of services, and no slab to cure. It is part of why 30 days works."
+      }
+    },
+    {
+      "id": "96_05",
+      "q": {
+        "pt": "Qual é a referência construída?",
+        "en": "Is there a built reference?"
+      },
+      "a": {
+        "pt": "O Lote 40, nossa obra de referência para o 96, com câmeras. Dá para visitar.",
+        "en": "Lote 40, our reference build for the 96, on camera. It can be visited."
+      }
+    },
+    {
+      "id": "96_06",
+      "q": {
+        "pt": "Dá para investir num lote de casas 96?",
+        "en": "Can I invest in a batch of 96s?"
+      },
+      "a": {
+        "pt": "Sim, é um dos três caminhos. Ticket, estrutura, garantias e ciclo ficam para a sessão, por escrito.",
+        "en": "Yes, it is one of the three ways in. Ticket, structure, collateral and cycle are for the session, in writing."
+      }
+    }
+  ]
+}

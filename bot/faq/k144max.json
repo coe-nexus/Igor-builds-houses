@@ -1,0 +1,71 @@
+{
+  "scope": "k144max",
+  "items": [
+    {
+      "id": "max_01",
+      "q": {
+        "pt": "O que é o Max?",
+        "en": "What is the Max?"
+      },
+      "a": {
+        "pt": "Uma casa de quatro pavimentos, 576 m², construída com poço de elevador, prumadas por andar, medidores separados e lajes corta-fogo já na estrutura. Mora-se nela; depois, se a vida mudar, vira 4 ou 8 apartamentos sem obra estrutural.",
+        "en": "A four-floor house, 576 m², built with the elevator shaft, per-floor risers, separate meters and fire-rated floors already in the structure. You live in it; later, if life changes, it becomes 4 or 8 apartments with no structural work."
+      }
+    },
+    {
+      "id": "max_02",
+      "q": {
+        "pt": "Meu terreno permite quatro pavimentos?",
+        "en": "Does my lot allow four floors?"
+      },
+      "a": {
+        "pt": "Depende do zoneamento. Mande o endereço e a matrícula ou o IPTU; checamos gabarito, taxa de ocupação e recuos e respondemos por escrito.",
+        "en": "Depends on zoning. Send the address and the title or IPTU; we check height limit, lot coverage and setbacks and reply in writing."
+      }
+    },
+    {
+      "id": "max_03",
+      "q": {
+        "pt": "Precisa de elevador?",
+        "en": "Does it need an elevator?"
+      },
+      "a": {
+        "pt": "Como casa única, não necessariamente; o poço fica pronto. Para converter em apartamentos, sim, e ele usa o poço já construído.",
+        "en": "As a single house, not necessarily; the shaft is ready. To convert into apartments, yes, and it uses the shaft already built."
+      }
+    },
+    {
+      "id": "max_04",
+      "q": {
+        "pt": "Por que o Max leva 45 dias e não 30?",
+        "en": "Why does the Max take 45 days, not 30?"
+      },
+      "a": {
+        "pt": "São 576 m² em quatro pavimentos: dois dias de içamento por andar, guindaste nos dias 19 a 26, estanque no dia 31. Com equipe de 16, 45 dias úteis é o prazo que entregamos sem correr. A página mostra os 45, dia a dia.",
+        "en": "It is 576 m² on four floors: two tilt-up days per floor, crane on days 19 to 26, weathertight on day 31. With a crew of 16, 45 working days is the schedule we deliver without rushing. The page shows all 45, day by day."
+      }
+    },
+    {
+      "id": "max_05",
+      "q": {
+        "pt": "Como funciona a conversão depois?",
+        "en": "How does the later conversion work?"
+      },
+      "a": {
+        "pt": "Acabamento por unidade (cozinha, banheiros, porta de entrada), áreas comuns, elevador e a instituição de condomínio em cartório. Não é demolição.",
+        "en": "Per-unit fit-out (kitchen, bathrooms, entry door), common areas, elevator and the condominium registration at the cartório. Not demolition."
+      }
+    },
+    {
+      "id": "max_06",
+      "q": {
+        "pt": "Serve para visto de investidor?",
+        "en": "Does it work for the investor visa?"
+      },
+      "a": {
+        "pt": "Pelo valor, sim, com folga. Com advogado de imigração; indicamos.",
+        "en": "By value, yes, with room to spare. With an immigration lawyer; we refer."
+      }
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "title": {
+    "pt": "Parceiros de licenciamento e preparação",
+    "en": "Permitting and preparation partners"
+  },
+  "note": {
+    "pt": "Nomes e logos só são exibidos com confirmação por escrito de cada parceiro. Até lá a página mostra a função.",
+    "en": "Names and logos appear only after written confirmation from each partner. Until then the page shows the role."
+  },
+  "partners": [
+    {
+      "id": "metal_forte",
+      "name": "Metal Forte",
+      "category": "fabrication",
+      "role": {
+        "pt": "Fabricação do aço (vigas W, pilares, terças)",
+        "en": "Steel fabrication (W beams, columns, purlins)"
+      },
+      "city": "Joinville, SC",
+      "url": null,
+      "logo": null,
+      "confirmed": false
+    },
+    {
+      "id": "mg_projetos",
+      "name": "MG Projetos (Eng. Civil Cristion)",
+      "category": "engineering",
+      "role": {
+        "pt": "Projetos de engenharia: plantas e compatibilização",
+        "en": "Engineering design: plans and coordination"
+      },
+      "city": "Santa Catarina",
+      "url": null,
+      "logo": null,
+      "confirmed": false
+    },
+    {
+      "id": "i9",
+      "name": "I9 Engenharia",
+      "category": "engineering",
+      "role": {
+        "pt": "Responsável técnica, projetos estruturais e ART",
+        "en": "Engineer of record, structural design and ART"
+      },
+      "city": "Joinville, SC",
+      "url": null,
+      "logo": null,
+      "confirmed": false
+    },
+    {
+      "id": "triplan",
+      "name": "Triplan Engenharia",
+      "category": "engineering",
+      "role": {
+        "pt": "Coordenação elétrica e hidrossanitária",
+        "en": "MEP coordination"
+      },
+      "city": "Joinville, SC",
+      "url": null,
+      "logo": null,
+      "confirmed": false
+    },
+    {
+      "id": "naval",
+      "name": "Naval Joinville",
+      "category": "materials",
+      "role": {
+        "pt": "Compensado naval",
+        "en": "Naval plywood"
+      },
+      "city": "Joinville, SC",
+      "url": null,
+      "logo": null,
+      "confirmed": false
+    },
+    {
+      "id": "soil_lab",
+      "name": null,
+      "category": "lab",
+      "role": {
+        "pt": "Sondagem SPT e laudo geotécnico",
+        "en": "SPT boreholes and geotechnical report"
+      },
+      "city": null,
+      "url": null,
+      "logo": null,
+      "confirmed": false
+    },
+    {
+      "id": "celesc",
+      "name": "Celesc",
+      "category": "utility",
+      "role": {
+        "pt": "Energia: padrão de entrada e ligação",
+        "en": "Power: service entrance and connection"
+      },
+      "city": "Santa Catarina",
+      "url": "https://www.celesc.com.br",
+      "logo": null,
+      "confirmed": false
+    },
+    {
+      "id": "aguas",
+      "name": "Águas de Joinville",
+      "category": "utility",
+      "role": {
+        "pt": "Água e esgoto",
+        "en": "Water and sewer"
+      },
+      "city": "Joinville, SC",
+      "url": "https://www.aguasdejoinville.com.br",
+      "logo": null,
+      "confirmed": false
+    },
+    {
+      "id": "prefeitura",
+      "name": "Prefeitura de Joinville",
+      "category": "public",
+      "role": {
+        "pt": "Alvará de construção e habite-se",
+        "en": "Building permit and occupancy certificate"
+      },
+      "city": "Joinville, SC",
+      "url": "https://www.joinville.sc.gov.br",
+      "logo": null,
+      "confirmed": false
+    },
+    {
+      "id": "caixa",
+      "name": "Caixa Econômica Federal",
+      "category": "finance",
+      "role": {
+        "pt": "Financiamento ao comprador (SBPE, Minha Casa Minha Vida)",
+        "en": "Buyer financing (SBPE, Minha Casa Minha Vida)"
+      },
+      "city": "Brasil",
+      "url": "https://www.caixa.gov.br",
+      "logo": null,
+      "confirmed": false
+    }
+  ]
+}

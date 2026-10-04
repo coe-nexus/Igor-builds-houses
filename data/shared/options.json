@@ -1,0 +1,186 @@
+{
+  "title": {
+    "pt": "Opcionais e valor de revenda",
+    "en": "Options and resale value"
+  },
+  "intro": {
+    "pt": "Retenção = parcela do valor do opcional que o próximo comprador reconhece. Acima de 70% é investimento; abaixo de 50% é conforto. Preços sob consulta.",
+    "en": "Retention = share of the option's value the next buyer recognizes. Above 70% it is an investment; below 50% it is comfort. Prices on request."
+  },
+  "prices_public": false,
+  "source": "Kiver_Build_Model.xlsx, Options sheet, Oct 2026. Re-export when the model changes.",
+  "items": [
+    {
+      "id": "terrace",
+      "label": {
+        "pt": "Terraço coberto, 17 m²",
+        "en": "Covered terrace, 17 m²"
+      },
+      "added_m2": 17,
+      "retention": 1.0,
+      "scene_step": "terrace",
+      "models": [
+        "k96",
+        "k96pro",
+        "k144pro",
+        "k144max"
+      ],
+      "why": {
+        "pt": "Varanda coberta conta como área privativa; o comprador paga quase o m² da casa.",
+        "en": "A covered varanda counts as private area; buyers pay close to the house's m² rate."
+      }
+    },
+    {
+      "id": "solar",
+      "label": {
+        "pt": "Kit solar 5 kWp",
+        "en": "Solar kit 5 kWp"
+      },
+      "added_m2": 0,
+      "retention": 0.7,
+      "scene_step": "solar",
+      "models": [
+        "k96",
+        "k96pro",
+        "k144pro",
+        "k144max"
+      ],
+      "why": {
+        "pt": "Conta de luz no mínimo; o mercado precifica a economia.",
+        "en": "Power bill at the minimum; the market prices the saving."
+      }
+    },
+    {
+      "id": "battery",
+      "label": {
+        "pt": "Baterias off-grid",
+        "en": "Off-grid battery pack"
+      },
+      "added_m2": 0,
+      "retention": 0.5,
+      "scene_step": null,
+      "models": [
+        "k144pro"
+      ],
+      "why": {
+        "pt": "Resiliência; vale mais no litoral.",
+        "en": "Resilience; worth more on the coast."
+      }
+    },
+    {
+      "id": "pool",
+      "label": {
+        "pt": "Piscina de fibra 6 x 3 m com deck",
+        "en": "Fibreglass pool 6 x 3 m with deck"
+      },
+      "added_m2": 0,
+      "retention": 0.6,
+      "scene_step": "pool",
+      "models": [
+        "k96pro",
+        "k144pro",
+        "k144max"
+      ],
+      "why": {
+        "pt": "Forte no litoral norte.",
+        "en": "Strong on the northern coast."
+      }
+    },
+    {
+      "id": "carport",
+      "label": {
+        "pt": "Garagem / pergolado para 2 carros",
+        "en": "Carport / pergola, 2 cars"
+      },
+      "added_m2": 0,
+      "retention": 0.7,
+      "scene_step": "carport",
+      "models": [
+        "k96",
+        "k96pro",
+        "k144pro",
+        "k144max"
+      ],
+      "why": {
+        "pt": "Mesmo metalon da casa; lê como arquitetura.",
+        "en": "Same metalon as the house; reads as architecture."
+      }
+    },
+    {
+      "id": "kitchen",
+      "label": {
+        "pt": "Cozinha gourmet",
+        "en": "Gourmet kitchen"
+      },
+      "added_m2": 0,
+      "retention": 0.5,
+      "scene_step": null,
+      "models": [
+        "k96pro",
+        "k144pro",
+        "k144max"
+      ],
+      "why": {
+        "pt": "Vende a casa no dia; metade do valor chega à revenda.",
+        "en": "Sells the house on the day; half the value survives to resale."
+      }
+    },
+    {
+      "id": "ac",
+      "label": {
+        "pt": "Ar-condicionado split, 3 ambientes",
+        "en": "Split AC, 3 rooms"
+      },
+      "added_m2": 0,
+      "retention": 0.5,
+      "scene_step": null,
+      "models": [
+        "k96",
+        "k96pro",
+        "k144pro",
+        "k144max"
+      ],
+      "why": {
+        "pt": "Esperado no verão catarinense; a infraestrutura na parede é o que vale.",
+        "en": "Expected in SC summers; the infrastructure in the wall is the valuable part."
+      }
+    },
+    {
+      "id": "cistern",
+      "label": {
+        "pt": "Cisterna e reúso de chuva",
+        "en": "Rainwater cistern and reuse"
+      },
+      "added_m2": 0,
+      "retention": 0.4,
+      "scene_step": null,
+      "models": [
+        "k144pro",
+        "k144max"
+      ],
+      "why": {
+        "pt": "Economia operacional.",
+        "en": "Operating saving."
+      }
+    },
+    {
+      "id": "smart",
+      "label": {
+        "pt": "Kit casa inteligente",
+        "en": "Smart home kit"
+      },
+      "added_m2": 0,
+      "retention": 0.2,
+      "scene_step": null,
+      "models": [
+        "k96pro",
+        "k144pro",
+        "k144max"
+      ],
+      "why": {
+        "pt": "Tecnologia deprecia rápido.",
+        "en": "Technology depreciates fast."
+      }
+    }
+  ]
+}

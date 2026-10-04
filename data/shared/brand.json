@@ -1,0 +1,48 @@
+{
+  "name": "Kiver Build",
+  "alt_names": [
+    "Igor Builds Houses",
+    "IBH"
+  ],
+  "byline": "Rabbi Dr. Izzy Kiver",
+  "org": "Kiver Enterprises",
+  "tagline": {
+    "pt": "Casas de aço montadas em 30 dias úteis. O Max em 45.",
+    "en": "Steel houses assembled in 30 working days. The Max in 45."
+  },
+  "primary_host": "kiver.org",
+  "future_host": "igorbuildshouses.com",
+  "theme": {
+    "bg": "#14171b",
+    "panel": "rgba(17,20,24,0.92)",
+    "accent": "#ff8a3d",
+    "text": "#e8e4da",
+    "text_strong": "#f4f1ea",
+    "muted": "#8a919b",
+    "border": "#2a3038",
+    "grid": "#2c333b"
+  },
+  "track_colors": {
+    "prefab": "#9fc9e8",
+    "foundation": "#7d8aa5",
+    "structure": "#ff8a3d",
+    "envelope": "#e8eaec",
+    "mep": "#3fa7a0",
+    "finishes": "#c9a227",
+    "options": "#b48a5a",
+    "inspection": "#4cb87a"
+  },
+  "fonts": {
+    "label": "ui-monospace, SFMono-Regular, Menlo, monospace",
+    "body": "'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif"
+  },
+  "disclaimer": {
+    "pt": "Cronograma de planejamento. Não é contrato nem orçamento.",
+    "en": "Planning schedule. Not a contract and not a quote."
+  },
+  "investor_disclaimer_counsel_to_approve": {
+    "pt": "Nada neste site é oferta de valores mobiliários ou convite a investir. Conversas sobre investimento acontecem em privado, com partes identificadas.",
+    "en": "Nothing on this site is an offer of securities or an invitation to invest. Investment conversations happen privately, with identified parties.",
+    "ru": "Ничто на этом сайте не является предложением ценных бумаг или приглашением инвестировать. Разговоры об инвестициях ведутся приватно, с идентифицированными сторонами."
+  }
+}
