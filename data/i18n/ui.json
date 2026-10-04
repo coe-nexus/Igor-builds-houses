@@ -28,7 +28,7 @@
     "legend": "Legenda",
     "tracks": "Frentes de trabalho",
     "calendar_mode": "Calendário",
-    "abstract_days": "Dias 1 a 30",
+    "abstract_days": "Dias 1 a {n}",
     "pick_start": "Escolher data de início",
     "start_date": "Dia 1",
     "end_date": "Entrega prevista",
@@ -57,7 +57,8 @@
     "pour": "Concretagem",
     "assembly": "Dia de montagem",
     "not_found": "Página não encontrada",
-    "nav_home": "Início"
+    "nav_home": "Início",
+    "by": "por"
   },
   "en": {
     "nav_models": "Models",
@@ -88,7 +89,7 @@
     "legend": "Legend",
     "tracks": "Work tracks",
     "calendar_mode": "Calendar",
-    "abstract_days": "Days 1 to 30",
+    "abstract_days": "Days 1 to {n}",
     "pick_start": "Pick a start date",
     "start_date": "Day 1",
     "end_date": "Planned handover",
@@ -117,6 +118,7 @@
     "pour": "Pour",
     "assembly": "Assembly day",
     "not_found": "Page not found",
-    "nav_home": "Home"
+    "nav_home": "Home",
+    "by": "by"
   }
 }

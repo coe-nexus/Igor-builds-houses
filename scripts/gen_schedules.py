@@ -216,7 +216,7 @@ def wood64():
         "system_label": {"pt": "Wood frame de fábrica sobre radier", "en": "Factory wood frame on a radier slab"},
         "working_days": 30, "crew_peak": 8, "shop_crew": 6,
         "milestones": {"pour": 5, "assembly": 12, "weathertight": 14, "mep_tested": 17, "handover": 30},
-        "risk_note": {"pt": "A casa fica estanque no dia 12. Os 30 dias incluem a fábrica em paralelo com a cura do radier.", "en": "The house is weathertight on day 12. The 30 days include factory time running in parallel with the slab cure."},
+        "risk_note": {"pt": "A casa é montada no dia 12 e fica estanque no dia 14. Os 30 dias incluem a fábrica em paralelo com a cura do radier.", "en": "The house is assembled on day 12 and weathertight on day 14. The 30 days include factory time running in parallel with the slab cure."},
         "land_note": {"pt": "Lote em loteamento com rede de esgoto dispensa a fossa.", "en": "A lot with sewer service drops the septic system."},
         "tracks": TRACKS,
         "scene": {"builder": "woodFrame", "steps": [
@@ -245,12 +245,12 @@ models = [
           [OPT_TERRACE, OPT_CARPORT, OPT_SOLAR, OPT_POOL]),
     steel("k144pro", "Kiver 144 Pro", 12, 12, 2, 14, 6,
           ("Lote mínimo 15 x 20 m.", "Minimum lot 15 x 20 m."),
-          ("288 m² em 30 dias: equipe de 14 trabalhando os dois pavimentos em paralelo a partir do dia 17.", "288 m² in 30 days: crew of 14 working both floors in parallel from day 17."),
+          ("288 m² em 30 dias: equipe de 14 no pico, no dia 16, com o içamento do 2º pavimento.", "288 m² in 30 days: crew of 14 at the peak, on day 16, with the floor 2 tilt-up."),
           [OPT_TERRACE, OPT_CARPORT, OPT_SOLAR, OPT_POOL]),
     steel("k144max", "Kiver 144 Max", 12, 12, 4, 16, 8,
           ("Lote zoneado para 4 pavimentos; PPCI e acessibilidade no licenciamento.", "Lot zoned for four floors; fire (PPCI) and accessibility in permitting."),
           ("576 m² em 45 dias úteis com equipe de 16: dois dias de içamento por pavimento, guindaste nos dias 19 a 26, estanque no dia 31, entrega no dia 45.", "576 m² in 45 working days with a crew of 16: two tilt-up days per floor, crane on days 19 to 26, weathertight on day 31, handover on day 45."),
-          [OPT_TERRACE, OPT_SOLAR, OPT_POOL], D=45),
+          [OPT_TERRACE, OPT_CARPORT, OPT_SOLAR, OPT_POOL], D=45),
 ]
 os.makedirs(os.path.join(os.path.dirname(__file__), "..", "data", "models"), exist_ok=True)
 for m in models:

@@ -68,8 +68,8 @@
     {
       "id": "celesc_entry",
       "label": {
-        "pt": "Padrão de entrada Celesc (estimativa)",
-        "en": "Celesc service entrance (estimate)"
+        "pt": "Padrão de entrada da concessionária de energia (estimativa)",
+        "en": "Power utility service entrance (estimate)"
       },
       "unit": "R$/un",
       "value": 3500,

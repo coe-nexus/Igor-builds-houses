@@ -231,6 +231,11 @@
         "en": "Terrace"
       },
       {
+        "id": "carport",
+        "pt": "Garagem",
+        "en": "Carport"
+      },
+      {
         "id": "solar",
         "pt": "Solar",
         "en": "Solar"
@@ -694,6 +699,17 @@
       "optional": true
     },
     {
+      "id": "opt_carport",
+      "track": "options",
+      "start": 43,
+      "end": 44,
+      "crew": 2,
+      "pt": "Opcional: garagem/pergolado para 2 carros.",
+      "en": "Option: 2-car carport / pergola.",
+      "scene_step": "carport",
+      "optional": true
+    },
+    {
       "id": "opt_solar",
       "track": "options",
       "start": 43,
@@ -789,8 +805,8 @@
     11,
     8,
     8,
-    8,
-    7,
+    10,
+    9,
     2
   ],
   "days_over_peak": [],

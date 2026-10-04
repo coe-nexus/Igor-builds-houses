@@ -13,7 +13,7 @@ cta = {
               "href_template": WA + "?text={prefill}",
               "prefill": {"pt": "Olá, Kiver Build. Vim da página do {model_name} {code}. Quero entender se faz sentido para mim.",
                           "en": "Hi Kiver Build. I came from the {model_name} page {code}. I want to see if it makes sense for me."}},
-  "secondary": {"label": {"pt": "Baixar o cronograma de 30 dias (PDF)", "en": "Download the 30-day schedule (PDF)"},
+  "secondary": {"label": {"pt": "Baixar o cronograma de {days} dias úteis (PDF)", "en": "Download the {days}-working-day schedule (PDF)"},  # {days} = the model's working_days
                 "gate": {"fields": ["name", "email", "whatsapp_optional"],
                          "consent": {"pt": "Aceito receber o cronograma e até três mensagens sobre o Kiver Build. Posso sair quando quiser.", "en": "I agree to receive the schedule and up to three messages about Kiver Build. I can opt out any time."}},
                 "placement": "after_build"},
