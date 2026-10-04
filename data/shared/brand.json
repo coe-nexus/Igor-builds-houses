@@ -14,6 +14,10 @@
     "pt": "* 30 dias úteis, cerca de sete semanas de calendário, contados do Dia 1, depois da due diligence. O Max leva 45 dias úteis e os modelos sob medida podem levar mais. Também construímos casas muito grandes, cerca de 70% mais rápido que quase todas as construtoras.",
     "en": "* 30 working days, about seven calendar weeks, counted from Day 1 after due diligence. The Max takes 45 working days and custom models can take longer. We also build very large houses, about 70% faster than almost all builders."
   },
+  "description": {
+    "pt": "Casas montadas em 30 dias úteis*. O Max leva 45 dias úteis. Veja a obra dia a dia, em 3D, e o que precisa estar pronto antes do Dia 1.",
+    "en": "Houses assembled in 30 working days*. The Max takes 45 working days. See the build day by day, in 3D, and what has to be ready before Day 1."
+  },
   "primary_host": "kiver.org",
   "future_host": "igorbuildshouses.com",
   "theme": {

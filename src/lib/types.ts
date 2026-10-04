@@ -162,6 +162,7 @@ export type Brand = {
   byline: string;
   org: string;
   tagline: Bi;
+  description: Bi; // meta and Open Graph description of the home page
   tagline_note: Bi; // footnote for the asterisk in the tagline, rendered under it on Home
   primary_host: string;
   future_host: string;

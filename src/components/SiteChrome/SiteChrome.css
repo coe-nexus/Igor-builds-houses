@@ -22,12 +22,12 @@
   font-size: 13px;
 }
 .site-nav a,
-.site-footer a {
+.site-footer a:not(.cta) {
   color: var(--text);
   text-decoration: none;
 }
 .site-nav a:hover,
-.site-footer a:hover {
+.site-footer a:not(.cta):hover {
   color: var(--accent);
 }
 .site-footer {

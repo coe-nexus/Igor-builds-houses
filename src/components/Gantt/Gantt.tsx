@@ -2,13 +2,13 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { Activity, Model, TrackId } from "../../lib/types";
 import { useCalendarPlan } from "../../lib/calendar";
 import { useDayStore } from "../../lib/dayStore";
-import { fill, useI18n } from "../../lib/i18n";
+import { useI18n } from "../../lib/i18n";
 import { shortLabel } from "../../lib/schedule";
 import "./Gantt.css";
 
-const COL = 22; // px per working day
+const COL = 24; // px per working day (a hold-point diamond is 24 px, so neighbours never overlap)
 const GAP = 7; // px for a run of weekend or holiday days (calendar mode)
-const LANE = 26; // px per bar lane
+const LANE = 28; // px per bar lane
 
 /** Greedy lane packing so overlapping activities of one track sit on separate lines. */
 function packLanes(list: Activity[]): { a: Activity; lane: number }[] {
@@ -168,9 +168,9 @@ export function Gantt({ model }: { model: Model }) {
                           <button
                             type="button"
                             className={`g-diamond${a.end > day ? " is-future" : ""}`}
-                            style={{ left: left + width - 10, top: 3 + lane * LANE }}
-                            title={`${t("hold_point")}: ${pick(a.hold_point)} (${tx(`hold_by_${a.hold_point.by}`)})`}
-                            aria-label={fill("{label}: {hp}", { label: t("hold_point"), hp: pick(a.hold_point) })}
+                            style={{ left: left + width - 12, top: 3 + lane * LANE }}
+                            title={`${pick(a.hold_point)} (${tx(`hold_by_${a.hold_point.by}`)})`}
+                            aria-label={`${t("hold_point")}, ${t("day")} ${a.end}: ${pick(a.hold_point)}`}
                             onClick={() => setDay(a.end, a.id)}
                           >
                             ◆
