@@ -221,6 +221,10 @@ for (const id of MODEL_IDS) {
   }
 }
 
+// ---- placeholders the components fill from the model ----
+if (!(cta.secondary.label.pt.includes("{days}") && cta.secondary.label.en.includes("{days}"))) err("cta", "secondary.label must use {days} (the Max has 45 working days)");
+for (const l of ["pt", "en"] as const) if (!ui[l].abstract_days?.includes("{n}")) err("ui.json", `${l}.abstract_days must use {n}`);
+
 // ---- guard rails from SPEC §18 and §1 ----
 {
   const files = [
@@ -238,6 +242,9 @@ for (const id of MODEL_IDS) {
   for (const f of files) {
     const text = readFileSync(root + f, "utf8");
     for (const [re, why] of forbidden) if (re.test(text)) err(f, `contains "${re.source}": ${why}`);
+    // Shared blocks render on the 45-day Max page too, so they carry no fixed "30 days". brand.json is exempt: its tagline names the Max.
+    if ((f.startsWith("data/shared/") && f !== "data/shared/brand.json") || f === "data/i18n/ui.json")
+      if (/\b30[ -](dias|day|working)/i.test(text)) err(f, 'contains a fixed "30 days" claim; use the model\'s working_days');
     if (f.startsWith("data/") && f !== "data/shared/partners.json")
       for (const h of hidden) if (text.includes(h.name)) warn(f, `names "${h.name}" (${h.id}) while unconfirmed; the name will render`);
   }

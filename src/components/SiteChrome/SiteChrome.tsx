@@ -30,6 +30,9 @@ export function SiteFooter() {
       )}
       <div className="site-footer-row">
         <span className="eyebrow">{brand.name}</span>
+        <span>
+          {t("by")} {brand.byline}
+        </span>
         <a href={href("/")}>{t("nav_home")}</a>
         <LangToggle />
       </div>
