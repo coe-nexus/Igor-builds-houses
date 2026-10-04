@@ -7,7 +7,7 @@ Five public web pages, one per house model (Kiver 64, 96, 96 Pro, 144 Pro, 144 M
 
 ## Stack (decided, do not relitigate)
 - Vite + React 18 + TypeScript + three (npm, pinned; no CDN scripts in the build)
-- Static output in `dist/`, hash routing, deployed on Cloudflare Pages (docs/DEPLOY.md) with no server
+- Static output in `dist/`, hash routing, deployed on Cloudflare (Workers static assets or Pages, docs/DEPLOY.md) with no server
 - No UI framework. Plain CSS modules or a single `theme.css` with variables from `data/shared/brand.json`
 - No analytics. The only third-party embeds are YouTube time-lapses from `timelapses.json`. No live camera feed on the site, ever (it goes to the investors' private WhatsApp group).
 

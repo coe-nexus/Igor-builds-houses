@@ -1,0 +1,11 @@
+{
+  // Cloudflare Workers static assets: serves dist/ (built by `npm run build`) with no Worker script.
+  // `npx wrangler deploy` reads this file. docs/DEPLOY.md has the dashboard settings.
+  "name": "igor-builds-houses",
+  "compatibility_date": "2026-06-01",
+  "assets": {
+    "directory": "./dist",
+    // any path that is not a file loads the app (hash routes never reach the server, so this is a safety net)
+    "not_found_handling": "single-page-application"
+  }
+}
