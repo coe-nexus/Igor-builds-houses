@@ -1,0 +1,5 @@
+/* Colour, track and font tokens (--bg, --accent, --track-prefab, --font-body ...) are injected into
+   <head> at build time from data/shared/brand.json (see vite.config.ts). Nothing is hardcoded here. */
+:root {
+  color-scheme: dark;
+}

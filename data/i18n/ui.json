@@ -52,7 +52,12 @@
     "timelapse_days": "dias úteis reais",
     "factory_scene": "Fábrica",
     "site_scene": "Canteiro",
-    "both_scenes": "Fábrica e canteiro, no mesmo dia"
+    "both_scenes": "Fábrica e canteiro, no mesmo dia",
+    "ring": "Anel de vigas W",
+    "pour": "Concretagem",
+    "assembly": "Dia de montagem",
+    "not_found": "Página não encontrada",
+    "nav_home": "Início"
   },
   "en": {
     "nav_models": "Models",
@@ -107,6 +112,11 @@
     "timelapse_days": "actual working days",
     "factory_scene": "Factory",
     "site_scene": "Site",
-    "both_scenes": "Factory and site, same day"
+    "both_scenes": "Factory and site, same day",
+    "ring": "W beam ring",
+    "pour": "Pour",
+    "assembly": "Assembly day",
+    "not_found": "Page not found",
+    "nav_home": "Home"
   }
 }

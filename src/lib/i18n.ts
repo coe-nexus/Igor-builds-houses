@@ -1,0 +1,29 @@
+import { ui, type UiKey } from "./data";
+import { useDayStore } from "./dayStore";
+import type { Bi, Lang } from "./types";
+
+/** Pick the string for a language from a {pt, en} pair. */
+export function pick(bi: Bi, lang: Lang): string {
+  return bi[lang];
+}
+
+/** UI chrome string by key. Keys are typed from ui.json, so a typo fails typecheck. */
+export function t(key: UiKey, lang: Lang): string {
+  return ui[lang][key] ?? key;
+}
+
+/** PT uses 1.234,5 and EN uses 1,234.5. */
+export function formatNumber(n: number, lang: Lang): string {
+  return new Intl.NumberFormat(lang === "pt" ? "pt-BR" : "en-US").format(n);
+}
+
+/** Hook: re-renders on language change and returns bound helpers. */
+export function useI18n() {
+  const lang = useDayStore((s) => s.lang);
+  return {
+    lang,
+    t: (key: UiKey) => t(key, lang),
+    pick: (bi: Bi) => pick(bi, lang),
+    n: (value: number) => formatNumber(value, lang),
+  };
+}
