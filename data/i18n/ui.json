@@ -129,7 +129,9 @@
     "lang_switch_label": "Mudar idioma",
     "print_title": "Cronograma de planejamento",
     "faq_home_title": "Dúvidas comuns",
-    "scene_hint_desktop": "arraste para orbitar · role para zoom"
+    "scene_hint_desktop": "arraste para orbitar · role para zoom",
+    "week": "semana",
+    "range_to": "a"
   },
   "en": {
     "nav_models": "Models",
@@ -261,6 +263,8 @@
     "lang_switch_label": "Change language",
     "print_title": "Planning schedule",
     "faq_home_title": "Common questions",
-    "scene_hint_desktop": "drag to orbit · scroll to zoom"
+    "scene_hint_desktop": "drag to orbit · scroll to zoom",
+    "week": "week",
+    "range_to": "to"
   }
 }

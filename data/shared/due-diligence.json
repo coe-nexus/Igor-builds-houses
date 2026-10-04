@@ -31,7 +31,8 @@
         "en": "Lot and rules"
       },
       "pt": "Matrícula, certidão de uso do solo e zoneamento, recuos, regras do condomínio, viabilidade do modelo no lote.",
-      "en": "Title, land-use and zoning certificate, setbacks, condominium rules, fit of the model on the lot."
+      "en": "Title, land-use and zoning certificate, setbacks, condominium rules, fit of the model on the lot.",
+      "lane": "main"
     },
     {
       "id": "soil",
@@ -48,7 +49,8 @@
         "en": "Soil: order and analysis"
       },
       "pt": "Sondagem SPT (2 a 3 furos; mais para o Max), laudo geotécnico, definição da fundação.",
-      "en": "SPT boreholes (2 to 3; more for the Max), geotechnical report, foundation definition."
+      "en": "SPT boreholes (2 to 3; more for the Max), geotechnical report, foundation definition.",
+      "lane": "main"
     },
     {
       "id": "survey",
@@ -63,7 +65,8 @@
         "en": "Topographic survey"
       },
       "pt": "Níveis, divisas, posição das redes e do acesso.",
-      "en": "Levels, boundaries, utility and access positions."
+      "en": "Levels, boundaries, utility and access positions.",
+      "lane": "main"
     },
     {
       "id": "design",
@@ -81,7 +84,8 @@
         "en": "Projects and ART"
       },
       "pt": "Projeto padrão adaptado ao lote, estrutural (NBR 8800), elétrico, hidrossanitário, PPCI quando exigido, ART recolhida.",
-      "en": "Standard design adapted to the lot, structural (NBR 8800), electrical, plumbing, fire (PPCI) where required, ART filed."
+      "en": "Standard design adapted to the lot, structural (NBR 8800), electrical, plumbing, fire (PPCI) where required, ART filed.",
+      "lane": "parallel"
     },
     {
       "id": "permit",
@@ -98,7 +102,8 @@
         "en": "Building permit"
       },
       "pt": "Alvará de construção na Prefeitura; aprovação do condomínio quando aplicável; Bombeiros para o Max.",
-      "en": "Building permit at the Prefeitura; condominium approval where applicable; fire department for the Max."
+      "en": "Building permit at the Prefeitura; condominium approval where applicable; fire department for the Max.",
+      "lane": "parallel"
     },
     {
       "id": "utilities",
@@ -116,7 +121,8 @@
         "en": "Connections: power, water, sewer"
       },
       "pt": "Padrão de entrada e ligação provisória de obra (concessionária de energia); água e esgoto ou poço e fossa (concessionária de água).",
-      "en": "Service entrance and temporary site power (power utility); water and sewer, or well and septic (water utility)."
+      "en": "Service entrance and temporary site power (power utility); water and sewer, or well and septic (water utility).",
+      "lane": "parallel"
     },
     {
       "id": "procurement",
@@ -134,7 +140,8 @@
         "en": "Procurement"
       },
       "pt": "Estrutura (aço ou madeira, conforme o modelo; o aço leva 2 a 3 semanas), compensado e painéis, cobertura, esquadrias (4 a 6 semanas), revestimento externo, kits elétrico e hidráulico, cozinha e banheiros. Entregas casadas com o cronograma do modelo.",
-      "en": "Structure (steel or wood, by model; steel takes 2 to 3 weeks), plywood and panels, roofing, windows (4 to 6 weeks), exterior cladding, MEP kits, kitchen and bath packages. Deliveries matched to the model's schedule."
+      "en": "Structure (steel or wood, by model; steel takes 2 to 3 weeks), plywood and panels, roofing, windows (4 to 6 weeks), exterior cladding, MEP kits, kitchen and bath packages. Deliveries matched to the model's schedule.",
+      "lane": "parallel"
     },
     {
       "id": "site",
@@ -149,7 +156,8 @@
         "en": "Site setup"
       },
       "pt": "Tapume, portão, placa de obra com ART, container de ferramentas, sanitário da equipe, ponto de água, caçambas, energia provisória.",
-      "en": "Perimeter fence, gate, site sign with ART, tool container, crew sanitary, water point, waste bins, temporary power."
+      "en": "Perimeter fence, gate, site sign with ART, tool container, crew sanitary, water point, waste bins, temporary power.",
+      "lane": "main"
     },
     {
       "id": "cameras",
@@ -164,7 +172,8 @@
         "en": "Perimeter, cameras and time-lapse"
       },
       "pt": "Duas câmeras fixas em postes nos cantos opostos e uma PTZ; uplink 4G ou fibra; placas LGPD. A transmissão ao vivo (YouTube, não listada) vai para o grupo privado de investidores no WhatsApp, não para o site. Um registro fotográfico a cada 10 minutos vira o time-lapse publicado aqui depois da entrega e o conjunto de dados, etiquetado por dia e atividade, que treina a revisão por IA das próximas obras.",
-      "en": "Two fixed cameras on poles at opposite corners plus one PTZ; 4G or fibre uplink; LGPD signage. The live stream (YouTube, unlisted) goes to the private investors' WhatsApp group, not to the website. A still frame every 10 minutes becomes the time-lapse published here after handover and the dataset, tagged by day and activity, that trains AI review of the next builds."
+      "en": "Two fixed cameras on poles at opposite corners plus one PTZ; 4G or fibre uplink; LGPD signage. The live stream (YouTube, unlisted) goes to the private investors' WhatsApp group, not to the website. A still frame every 10 minutes becomes the time-lapse published here after handover and the dataset, tagged by day and activity, that trains AI review of the next builds.",
+      "lane": "main"
     },
     {
       "id": "safety",
@@ -179,7 +188,8 @@
         "en": "Crew and safety"
       },
       "pt": "NR-18 (PGR ou PCMAT conforme o porte), EPIs, integração, seguro de risco de engenharia e RC, documentação CLT.",
-      "en": "NR-18 (PGR or PCMAT by size), PPE, onboarding, builder's risk and liability insurance, CLT paperwork."
+      "en": "NR-18 (PGR or PCMAT by size), PPE, onboarding, builder's risk and liability insurance, CLT paperwork.",
+      "lane": "main"
     },
     {
       "id": "kickoff",
@@ -196,7 +206,8 @@
         "en": "Kick-off"
       },
       "pt": "Plano de obra carregado nesta página, pontos de parada agendados com a responsável técnica, fornecedores confirmados, data do Dia 1 fixada no calendário de dias úteis.",
-      "en": "Build plan loaded on this page, hold points booked with the engineer of record, suppliers confirmed, Day 1 fixed on the working-day calendar."
+      "en": "Build plan loaded on this page, hold points booked with the engineer of record, suppliers confirmed, Day 1 fixed on the working-day calendar.",
+      "lane": "main"
     }
   ]
 }

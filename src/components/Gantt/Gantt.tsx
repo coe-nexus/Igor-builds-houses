@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { Activity, Model, TrackId } from "../../lib/types";
 import { useCalendarPlan } from "../../lib/calendar";
 import { useDayStore } from "../../lib/dayStore";
@@ -31,6 +31,7 @@ export function Gantt({ model }: { model: Model }) {
   const selected = useDayStore((s) => s.selectedActivity);
   const plan = useCalendarPlan();
   const [tableView, setTableView] = useState(false);
+  const scroller = useRef<HTMLDivElement>(null);
   const wd = model.working_days;
 
   const { xs, total } = useMemo(() => {
@@ -53,6 +54,19 @@ export function Gantt({ model }: { model: Model }) {
         }),
     [model, enabled],
   );
+
+  // Keep the day cursor in view when the day changes (autoplay, scrubber, histogram) and the chart is wider than its pane.
+  useEffect(() => {
+    const el = scroller.current;
+    if (!el || day < 1) return;
+    const label = el.querySelector<HTMLElement>(".g-label")?.offsetWidth ?? 0;
+    const left = label + xs[day], right = left + COL;
+    const visibleFrom = el.scrollLeft + label, visibleTo = el.scrollLeft + el.clientWidth;
+    if (left < visibleFrom + 8 || right > visibleTo - 8) {
+      const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      el.scrollTo({ left: Math.max(0, left - el.clientWidth / 2), behavior: reduce ? "auto" : "smooth" });
+    }
+  }, [day, xs, tableView]);
 
   const trackName = (id: TrackId) => pick(model.tracks.find((x) => x.id === id) ?? { pt: id, en: id });
   const flags = (a: Activity) =>
@@ -107,7 +121,7 @@ export function Gantt({ model }: { model: Model }) {
           </table>
         </div>
       ) : (
-        <div className="gantt-scroll" role="group" aria-label={t("gantt_aria")}>
+        <div className="gantt-scroll" ref={scroller} role="group" aria-label={t("gantt_aria")}>
           <div className="gantt-grid" style={{ width: `calc(var(--g-label) + ${total}px)` }}>
             <div className="g-row g-head">
               <div className="g-label g-corner" />

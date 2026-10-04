@@ -19,7 +19,11 @@
   grid-template-columns: minmax(0, 1fr);
   align-items: start;
 }
-/* Mobile: the scene (16:10) and the scrubber stay pinned under the page top while the day panel and Gantt scroll. */
+/* Mobile: .build-left dissolves so the scene and scrubber are direct children of the grid and stay pinned while the
+   day panel and the Gantt scroll beneath them. */
+.build-left {
+  display: contents;
+}
 .build-sticky {
   position: sticky;
   top: 0;
@@ -37,8 +41,16 @@
     grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
     gap: 16px;
   }
-  .build-sticky {
+  /* Desktop: the whole left column (scene, scrubber, day panel) stays in view next to the Gantt. */
+  .build-left {
+    display: block;
+    position: sticky;
     top: 8px;
+    max-height: calc(100vh - 16px);
+    overflow-y: auto;
+  }
+  .build-sticky {
+    position: static;
   }
   .build-right {
     padding: 16px 16px 16px 0;

@@ -1,5 +1,6 @@
 import type { Model } from "../../lib/types";
 import { useI18n } from "../../lib/i18n";
+import { PrimaryCta, TertiaryCta } from "../Cta";
 import "./Hero.css";
 
 // P0 hero: the facts the model data already carries. CTAs, due diligence and the build join in P2 to P4.
@@ -48,6 +49,10 @@ export function Hero({ model }: { model: Model }) {
         <br />
         {pick(model.risk_note)}
       </p>
+      <div className="hero-cta">
+        <PrimaryCta model={model.id} placement="H" />
+        <TertiaryCta model={model.id} where="hero_secondary_line" />
+      </div>
     </section>
   );
 }

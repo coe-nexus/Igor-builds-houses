@@ -1,15 +1,10 @@
-import { dueDiligence } from "../lib/data";
-import { useI18n } from "../lib/i18n";
+import { DueDiligence } from "../components/DueDiligence";
 
-// P0 placeholder: the shared pipeline component lands in P4.
+/** The shared due-diligence block as its own page (SPEC §5). */
 export function DueDiligencePage() {
-  const { pick } = useI18n();
   return (
-    <main className="page">
-      <section className="page-intro">
-        <h1>{pick(dueDiligence.title)}</h1>
-        <p>{pick(dueDiligence.intro)}</p>
-      </section>
+    <main className="page" id="main" tabIndex={-1}>
+      <DueDiligence heading="h1" />
     </main>
   );
 }

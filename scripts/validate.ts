@@ -3,7 +3,7 @@
 import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import type {
-  Activity, Brand, Cta, DueDiligence, FaqFile, Holidays, MaxExits, Model, Options, Partners, Rates, Timelapses, UiStrings,
+  Activity, Brand, Cta, DueDiligence, FaqFile, FaqSite, Holidays, MaxExits, Model, Options, Partners, Rates, Timelapses, UiStrings,
 } from "../src/lib/types";
 import { MODEL_IDS, PARTNER_CATEGORIES, TRACK_IDS } from "../src/lib/types";
 
@@ -39,6 +39,7 @@ const partners = load<Partners>("data/shared/partners.json");
 const rates = load<Rates>("data/shared/rates.json");
 const timelapses = load<Timelapses>("data/shared/timelapses.json");
 const models = Object.fromEntries(MODEL_IDS.map((id) => [id, load<Model>(`data/models/${id}.json`)])) as Record<(typeof MODEL_IDS)[number], Model>;
+const faqSite = load<FaqSite>("data/shared/faq-site.json");
 const faqFiles = readdirSync(root + "bot/faq").filter((f) => f.endsWith(".json")).sort();
 
 // Bilingual completeness everywhere except ui.json (checked below as two flat dictionaries).
@@ -130,6 +131,7 @@ for (const id of MODEL_IDS) {
     stepIds.add(s.id);
     if (!(isNum(s.weeks?.[0]) && isNum(s.weeks?.[1]) && s.weeks[0] <= s.weeks[1])) err(w, "weeks must be [min, max]");
     if (typeof s.gate !== "boolean") err(w, "gate must be a boolean");
+    if (s.lane !== "main" && s.lane !== "parallel") err(w, 'lane must be "main" or "parallel"');
     if (!isBi(s.title)) err(w, "title must be {pt, en}");
     for (const pid of s.partner_ids) if (!ids.has(pid)) err(w, `partner_id "${pid}" not in partners.json`);
   }
@@ -220,6 +222,33 @@ for (const id of MODEL_IDS) {
       if (ids.has(it.id)) err(`bot/faq/${f}`, `id "${it.id}" also in ${ids.get(it.id)}`);
       ids.set(it.id, f);
     }
+  }
+}
+
+// ---- site FAQ selection ----
+{
+  const all = new Map<string, FaqFile["items"][number]>();
+  for (const f of faqFiles) for (const it of load<FaqFile>(`bot/faq/${f}`).items) all.set(it.id, it);
+  const ref = (where: string, ids: string[]) => ids.forEach((id) => all.has(id) || err(`faq-site/${where}`, `id "${id}" is not in bot/faq`));
+  ref("home", faqSite.home);
+  ref("common", faqSite.common);
+  ref("counsel_only", faqSite.counsel_only);
+  for (const id of MODEL_IDS) {
+    if (!faqSite.by_model[id]) err("faq-site", `by_model.${id} missing`);
+    else ref(`by_model.${id}`, faqSite.by_model[id]);
+    ref(`common_exclude.${id}`, faqSite.common_exclude[id] ?? []);
+  }
+  // The Max page may not state a fixed 30 days, and no page shows investment content until counsel approves (CLAUDE.md).
+  const maxIds = [...faqSite.by_model.k144max, ...faqSite.common.filter((id) => !(faqSite.common_exclude.k144max ?? []).includes(id))];
+  for (const id of maxIds) {
+    const it = all.get(id);
+    if (it && /\b30[ -](dias|day|working)/i.test(`${it.q.pt} ${it.q.en} ${it.a.pt} ${it.a.en}`)) err("faq-site", `"${id}" is on the Max page but states a fixed 30 days`);
+  }
+  const shown = new Set([...faqSite.home, ...faqSite.common, ...Object.values(faqSite.by_model).flat()]);
+  for (const id of shown) {
+    const it = all.get(id);
+    if (!it || faqSite.counsel_only.includes(id) || brand.counsel_approved === true) continue;
+    if (/invest|return|visa|rentabilidade/i.test(`${it.q.pt} ${it.q.en} ${it.a.pt} ${it.a.en}`)) err("faq-site", `"${id}" mentions investment; add it to counsel_only`);
   }
 }
 

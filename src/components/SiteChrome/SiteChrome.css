@@ -48,3 +48,17 @@
   gap: 16px;
   margin-top: 16px;
 }
+.footer-cta {
+  margin-bottom: 32px;
+}
+.footer-cta h2 {
+  margin: 0 0 12px;
+  font-family: var(--font-label);
+  font-size: 20px;
+  color: var(--text-strong);
+}
+@media (max-width: 719px) {
+  .site-footer {
+    padding-bottom: 88px; /* room for the sticky bar */
+  }
+}

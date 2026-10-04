@@ -83,3 +83,50 @@ button:focus-visible {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* ---- page blocks ---- */
+.block {
+  padding: 32px 16px;
+  border-top: 1px solid var(--border);
+}
+.block > h2 {
+  margin: 0 0 8px;
+  font-family: var(--font-label);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-strong);
+}
+.block-note {
+  max-width: 72ch;
+  margin: 8px 0;
+  color: var(--text);
+}
+@media (min-width: 720px) {
+  .block {
+    padding: 40px 24px;
+  }
+}
+
+.skip-link {
+  position: absolute;
+  top: -48px;
+  left: 8px;
+  z-index: 100;
+  padding: 10px 14px;
+  color: var(--bg);
+  background: var(--accent);
+}
+.skip-link:focus {
+  top: 8px;
+}
+#main:focus {
+  outline: none;
+}
+.quote-row {
+  padding: 0 16px 8px;
+}
+@media (min-width: 720px) {
+  .quote-row {
+    padding: 0 24px 8px;
+  }
+}

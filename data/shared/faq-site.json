@@ -1,0 +1,74 @@
+{
+  "note": "Which bot FAQ entries the site shows. Entries about investment, returns, visas, price comparisons and unverified financing rules stay private (CLAUDE.md). The Max page also drops entries that state a fixed day count for the other models. counsel_only entries mention investors or investing: they appear only once brand.json has counsel_approved: true.",
+  "home": [
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "c05",
+    "c06",
+    "c07",
+    "c09",
+    "c11"
+  ],
+  "common": [
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "c05",
+    "c06",
+    "c07",
+    "c08",
+    "c09",
+    "c10",
+    "c11"
+  ],
+  "common_exclude": {
+    "k64": [
+      "c05",
+      "c08"
+    ],
+    "k144max": [
+      "c01",
+      "c03",
+      "c06",
+      "c07"
+    ]
+  },
+  "by_model": {
+    "k64": [
+      "64_02",
+      "64_03",
+      "64_05"
+    ],
+    "k96": [
+      "96_01",
+      "96_02",
+      "96_04",
+      "96_05"
+    ],
+    "k96pro": [
+      "96p_01",
+      "96p_02",
+      "96p_03",
+      "96p_05"
+    ],
+    "k144pro": [
+      "144p_01",
+      "144p_02",
+      "144p_03"
+    ],
+    "k144max": [
+      "max_01",
+      "max_02",
+      "max_03",
+      "max_04",
+      "max_05"
+    ]
+  },
+  "counsel_only": [
+    "c10",
+    "c11"
+  ]
+}

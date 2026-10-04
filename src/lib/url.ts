@@ -4,6 +4,7 @@
 export type Location = { path: string; query: URLSearchParams };
 
 export function readLocation(): Location {
+  if (typeof window === "undefined") return { path: "/", query: new URLSearchParams() }; // unit tests run in node
   const raw = window.location.hash.replace(/^#/, "");
   const [pathPart = "", queryPart = ""] = raw.split("?");
   const query = new URLSearchParams(window.location.search);

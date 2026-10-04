@@ -58,6 +58,8 @@ export type DueDiligenceStep = {
   weeks: [number, number];
   partner_ids: string[];
   gate: boolean;
+  /** Steps that typically run alongside the others (SPEC §10) sit on a second lane. */
+  lane: "main" | "parallel";
   title: Bi;
   pt: string;
   en: string;
@@ -181,3 +183,14 @@ export type UiStrings = { pt: Record<string, string>; en: Record<string, string>
 
 export type FaqItem = { id: string; q: Record<string, string>; a: Record<string, string> };
 export type FaqFile = { scope: string; items: FaqItem[] };
+
+/** Which bot FAQ entries the site shows, per page. */
+export type FaqSite = {
+  note?: string;
+  home: string[];
+  common: string[];
+  common_exclude: Partial<Record<ModelId, string[]>>;
+  /** Entries that mention investors: shown only when brand.counsel_approved is true. */
+  counsel_only: string[];
+  by_model: Record<ModelId, string[]>;
+};

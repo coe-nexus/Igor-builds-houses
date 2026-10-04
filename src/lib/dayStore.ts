@@ -16,6 +16,7 @@ function isLang(v: unknown): v is Lang {
 function initialLang(): Lang {
   const fromUrl = readLocation().query.get("lang");
   if (isLang(fromUrl)) return fromUrl;
+  if (typeof window === "undefined") return "pt";
   try {
     const stored = window.localStorage.getItem(STORAGE_KEY);
     if (isLang(stored)) return stored;

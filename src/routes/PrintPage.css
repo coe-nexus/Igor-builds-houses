@@ -1,0 +1,48 @@
+.print-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+.print-page h1 {
+  margin: 4px 0;
+  font-family: var(--font-label);
+  font-size: 22px;
+  color: var(--text-strong);
+}
+.print-page table {
+  width: 100%;
+  margin-top: 16px;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+.print-page th,
+.print-page td {
+  padding: 5px 6px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--border);
+}
+.print-page em {
+  display: block;
+  font-style: normal;
+  color: var(--track-inspection);
+}
+.print-disclaimer {
+  margin-top: 16px;
+  font-size: 12px;
+  color: var(--muted);
+}
+@media print {
+  :root {
+    --bg: #fff;
+    --text: #111;
+    --text-strong: #000;
+    --muted: #555;
+    --border: #bbb;
+    --accent: #b85a12;
+    --track-inspection: #1b7a45;
+  }
+  body {
+    background: #fff;
+  }
+}

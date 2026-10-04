@@ -1,0 +1,121 @@
+.dd-summary {
+  display: grid;
+  gap: 4px;
+  margin: 16px 0;
+  padding: 12px;
+  border: 1px solid var(--border);
+}
+.dd-summary p {
+  margin: 0;
+}
+.dd-toggle {
+  justify-self: start;
+  min-height: 44px;
+  margin-top: 8px;
+  padding: 0 14px;
+  font: inherit;
+  font-size: 13px;
+  color: var(--text-strong);
+  background: transparent;
+  border: 1px solid var(--border);
+  cursor: pointer;
+}
+.dd-lanes {
+  display: grid;
+  gap: 16px;
+}
+.dd-lanes[hidden] {
+  display: none;
+}
+.dd-lane {
+  min-width: 0;
+}
+.dd-lane h3 {
+  margin: 0 0 8px;
+}
+.dd-lane ol {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.dd-lane-parallel {
+  padding: 12px;
+  background: color-mix(in srgb, var(--accent) 5%, transparent);
+  border: 1px dashed var(--border);
+}
+.dd-step {
+  padding: 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+}
+.dd-step-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px 12px;
+}
+.dd-step h4 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  font-family: var(--font-label);
+  font-size: 14px;
+  color: var(--text-strong);
+}
+.dd-icon {
+  color: var(--accent);
+}
+.dd-weeks {
+  font-family: var(--font-label);
+  font-size: 12px;
+  color: var(--accent);
+}
+.dd-step p {
+  margin: 6px 0 0;
+  font-size: 13px;
+}
+.dd-partners {
+  display: grid;
+  gap: 6px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+  color: var(--muted);
+}
+.dd-partners li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.dd-partners .monogram {
+  width: 26px;
+  height: 26px;
+  font-size: 10px;
+}
+.dd-gate {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 0 6px;
+  border: 1px solid var(--track-inspection);
+  font-family: var(--font-label);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--track-inspection);
+}
+.dd-closing {
+  margin: 16px 0 0;
+  font-family: var(--font-label);
+  color: var(--text-strong);
+}
+@media (min-width: 900px) {
+  .dd-lanes {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
