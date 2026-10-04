@@ -58,7 +58,7 @@ def steel(id, name, W, L, F, crew_peak, shop_crew, land_note, risk_note, options
     A = []
     # Prefab (off-site) runs in parallel from Day 1
     A.append(act("steel_fab", "prefab", 1, min(ring - 1 + 2 * (F - 1), walls_end), shop_crew, 
-        f"Fabricação do aço na Metal Forte: baldrame W, pilares, vigas de topo, terças. Entregas em lotes, primeiro lote no dia {ring}.",
+        f"Fabricação do aço na oficina: baldrame W, pilares, vigas de topo, terças. Entregas em lotes, primeiro lote no dia {ring}.",
         f"Steel fabrication at the shop: W baldrame ring, columns, top rings, purlins. Delivered in batches, first batch on day {ring}.", offsite=True))
     A.append(act("panels_fab", "prefab", 2, walls_end - 1, shop_crew,
         "Painéis de parede pré-fabricados (montante metálico @400, copaíba 6 mm, manta, vãos de janela). Prontos um dia antes do içamento de cada pavimento.",

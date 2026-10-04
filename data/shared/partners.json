@@ -137,6 +137,32 @@
       "url": "https://www.caixa.gov.br",
       "logo": null,
       "confirmed": false
+    },
+    {
+      "id": "wr_serralheria",
+      "name": "WR Serralheria",
+      "category": "fabrication",
+      "role": {
+        "pt": "Serralheria e soldagem (função a confirmar)",
+        "en": "Metalwork and welding (role to be confirmed)"
+      },
+      "city": null,
+      "url": null,
+      "logo": null,
+      "confirmed": false
+    },
+    {
+      "id": "conexa",
+      "name": "Conexa Construtora",
+      "category": "engineering",
+      "role": {
+        "pt": "Construtora parceira (função a confirmar)",
+        "en": "Construction partner (role to be confirmed)"
+      },
+      "city": null,
+      "url": null,
+      "logo": null,
+      "confirmed": false
     }
   ]
 }
