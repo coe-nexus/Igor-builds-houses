@@ -193,6 +193,8 @@ for (const id of MODEL_IDS) {
   for (const k of ["bg", "panel", "accent", "text", "text_strong", "muted", "border", "grid"]) if (!isStr(brand.theme?.[k])) err("brand", `theme.${k} missing`);
   for (const t of TRACK_IDS) if (!isStr(brand.track_colors?.[t])) err("brand", `track_colors.${t} missing`);
   for (const k of ["name", "byline", "org", "primary_host", "future_host"] as const) if (!isStr(brand[k])) err("brand", `${k} missing`);
+  if (!isBi(brand.tagline_note)) err("brand", "tagline_note must be {pt, en}");
+  else for (const l of ["pt", "en"] as const) if (!brand.tagline_note[l].includes(String(models.k144max.working_days))) err("brand", `tagline_note.${l} must state the Max's ${models.k144max.working_days} working days`);
 }
 {
   const iso = /^(\d{4})-(\d{2})-(\d{2})$/;

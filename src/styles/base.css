@@ -61,6 +61,12 @@ button:focus-visible {
 .page-intro p {
   max-width: 68ch;
 }
+.tagline-note {
+  margin: 0;
+  max-width: 68ch;
+  font-size: 13px;
+  color: var(--muted);
+}
 .card-grid {
   display: grid;
   grid-template-columns: 1fr;

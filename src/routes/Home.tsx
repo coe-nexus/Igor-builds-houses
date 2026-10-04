@@ -8,7 +8,10 @@ export function Home() {
     <main className="page">
       <section className="page-intro">
         <p className="eyebrow">{brand.name}</p>
-        <h1>{pick(brand.tagline)}</h1>
+        <h1 aria-describedby="tagline-note">{pick(brand.tagline)}</h1>
+        <p id="tagline-note" className="tagline-note">
+          {pick(brand.tagline_note)}
+        </p>
       </section>
       <h2 className="visually-hidden">{t("nav_models")}</h2>
       <div className="card-grid">

@@ -160,6 +160,7 @@ export type Brand = {
   byline: string;
   org: string;
   tagline: Bi;
+  tagline_note: Bi; // footnote for the asterisk in the tagline, rendered under it on Home
   primary_host: string;
   future_host: string;
   theme: Record<string, string>;
