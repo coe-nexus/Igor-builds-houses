@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import { MODEL_SLUGS, brand, models } from "./lib/data";
 import { useI18n } from "./lib/i18n";
 import { readLocation } from "./lib/url";
-import { SiteFooter, SiteHeader } from "./components/SiteChrome";
+import { EmbedFooter, SiteFooter, SiteHeader } from "./components/SiteChrome";
+import { EMBED, useEmbedHeight } from "./lib/embed";
 import { StickyBar } from "./components/Cta";
 import type { CtaModel } from "./lib/cta";
 import { PrintPage } from "./routes/PrintPage";
@@ -23,6 +24,7 @@ function useRoutePath(): string {
 
 export function App() {
   const path = useRoutePath();
+  useEmbedHeight();
   const { t, pick } = useI18n();
   const modelId = MODEL_SLUGS[path.slice(1)];
   const printId = path.startsWith("/print/") ? MODEL_SLUGS[path.slice(7)] : undefined;
@@ -54,6 +56,15 @@ export function App() {
   if (printId) return page; // the print view carries no site chrome
 
   const ctaModel: CtaModel = modelId ?? "home";
+  if (EMBED) {
+    // iframe on kiver.org: no header, no footer chrome, no sticky bar; the disclaimer stays
+    return (
+      <>
+        {page}
+        <EmbedFooter />
+      </>
+    );
+  }
   return (
     <>
       <a className="skip-link" href="#main" onClick={(e) => { e.preventDefault(); document.getElementById("main")?.focus(); }}>

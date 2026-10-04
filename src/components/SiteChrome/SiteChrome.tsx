@@ -46,3 +46,15 @@ export function SiteFooter({ model }: { model: CtaModel }) {
     </footer>
   );
 }
+
+/** Embed mode: no navigation or footer chrome, but the planning disclaimer stays (SPEC §6). */
+export function EmbedFooter() {
+  const { pick } = useI18n();
+  return (
+    <footer className="site-footer embed-footer">
+      <p className="site-footer-disclaimer">{pick(brand.disclaimer)}</p>
+      {brand.counsel_approved === true && <p className="site-footer-disclaimer">{pick(brand.investor_disclaimer_counsel_to_approve)}</p>}
+      <LangToggle />
+    </footer>
+  );
+}

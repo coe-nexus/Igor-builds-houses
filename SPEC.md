@@ -363,3 +363,12 @@ Accept: the iframe snippet renders on a test page with auto height; `VITE_BASE=/
 5. Future domain: igorbuildshouses.com. Display name stays Kiver Build until the move; one config value flips it.
 6. The 64 page shows the factory as a second scene.
 7. Schedules are cleared to go public. `scripts/gen_schedules.py` stays the single place for later edits.
+
+## 20. Amendments made while building (4 October 2026)
+
+1. **Deploy target is Cloudflare Pages**, not GitHub Pages (§14). `.github/workflows/ci.yml` only gates changes; `docs/DEPLOY.md` has the setup. `VITE_BASE` defaults to `/`. `public/CNAME.example` is gone; custom domains are set in Cloudflare.
+2. **FAQ on every page.** Entries come from `bot/faq/`; `data/shared/faq-site.json` selects them. The Home page has a short FAQ too.
+3. **Every CTA goes to WhatsApp**, with a `[MODEL-PLACEMENT]` code. The §4 download gate has no server: name, email and optional phone travel in the WhatsApp message, then the CSV and a print-to-PDF view unlock. Extra codes: `Q` quote request, `M` model access (shown only with `counsel_approved`).
+4. **Open Graph per model** is served by a generated shell page per model (`/96/`), because the app routes by hash (§5).
+5. **The financial model is a restricted Google Sheet**, not a file on the site; it is never committed.
+6. **Shared data additions**: `brand.tagline_note` and `brand.description`, `due-diligence.steps[].lane`, `faq-site.json`, ui keys. No field was renamed.

@@ -1,1 +1,1 @@
-export { SiteHeader, SiteFooter } from "./SiteChrome";
+export { SiteHeader, SiteFooter, EmbedFooter } from "./SiteChrome";

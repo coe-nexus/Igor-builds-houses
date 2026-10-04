@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "validate": "tsx scripts/validate.ts",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "export-csv": "tsx scripts/export-csv.ts"
   },
   "dependencies": {
     "react": "18.3.1",
