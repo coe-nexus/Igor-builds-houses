@@ -26,6 +26,20 @@ function initialLang(): Lang {
   return "pt";
 }
 
+/** If the address carries ?lang=pt|en that differs from the current language (a link was followed), switch to it. */
+export function syncLangFromUrl(): void {
+  const q = readLocation().query.get("lang");
+  if (isLang(q) && q !== useDayStore.getState().lang) {
+    document.documentElement.lang = q;
+    useDayStore.setState({ lang: q });
+    try {
+      window.localStorage.setItem(STORAGE_KEY, q);
+    } catch {
+      /* ignore */
+    }
+  }
+}
+
 export type TrackFlags = Record<TrackId, boolean>;
 const allTracksOn = (): TrackFlags => Object.fromEntries(TRACK_IDS.map((t) => [t, true])) as TrackFlags;
 

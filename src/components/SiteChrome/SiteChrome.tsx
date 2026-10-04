@@ -27,8 +27,13 @@ export function SiteFooter({ model }: { model: CtaModel }) {
   return (
     <footer className="site-footer">
       <div className="footer-cta">
-        <h2>{t("home_cta_title")}</h2>
-        <PrimaryCta model={model} placement="F" />
+        {/* the Home page already has its primary CTA a screen above, so it carries none here (never two primaries at once) */}
+        {model !== "home" && (
+          <>
+            <h2>{t("home_cta_title")}</h2>
+            <PrimaryCta model={model} placement="F" />
+          </>
+        )}
         <p>
           <ModelAccess model={model} />
         </p>

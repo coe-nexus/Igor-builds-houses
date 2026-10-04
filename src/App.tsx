@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { MODEL_SLUGS, brand, models } from "./lib/data";
 import { useI18n } from "./lib/i18n";
+import { syncLangFromUrl } from "./lib/dayStore";
 import { readLocation } from "./lib/url";
 import { EmbedFooter, SiteFooter, SiteHeader } from "./components/SiteChrome";
 import { EMBED, useEmbedHeight } from "./lib/embed";
@@ -15,7 +16,10 @@ import { ModelPage } from "./routes/ModelPage";
 function useRoutePath(): string {
   const [path, setPath] = useState(() => readLocation().path);
   useEffect(() => {
-    const onChange = () => setPath(readLocation().path);
+    const onChange = () => {
+      syncLangFromUrl();
+      setPath(readLocation().path);
+    };
     window.addEventListener("hashchange", onChange);
     return () => window.removeEventListener("hashchange", onChange);
   }, []);
