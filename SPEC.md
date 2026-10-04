@@ -366,7 +366,7 @@ Accept: the iframe snippet renders on a test page with auto height; `VITE_BASE=/
 
 ## 20. Amendments made while building (4 October 2026)
 
-1. **Deploy target is Cloudflare Pages**, not GitHub Pages (§14). `.github/workflows/ci.yml` only gates changes; `docs/DEPLOY.md` has the setup. `VITE_BASE` defaults to `/`. `public/CNAME.example` is gone; custom domains are set in Cloudflare.
+1. **Deploy target is Cloudflare** (Workers static assets via `wrangler.jsonc`, or Pages), not GitHub Pages (§14). `.github/workflows/ci.yml` only gates changes; `docs/DEPLOY.md` has the setup. `VITE_BASE` defaults to `/`. `public/CNAME.example` is gone; custom domains are set in Cloudflare.
 2. **FAQ on every page.** Entries come from `bot/faq/`; `data/shared/faq-site.json` selects them. The Home page has a short FAQ too.
 3. **Every CTA goes to WhatsApp**, with a `[MODEL-PLACEMENT]` code. The §4 download gate has no server: name, email and optional phone travel in the WhatsApp message, then the CSV and a print-to-PDF view unlock. Extra codes: `Q` quote request, `M` model access (shown only with `counsel_approved`).
 4. **Open Graph per model** is served by a generated shell page per model (`/96/`), because the app routes by hash (§5).

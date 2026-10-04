@@ -1,6 +1,6 @@
 # Kiver Build pages
 
-Five public, bilingual (PT/EN) pages, one per house model (Kiver 64, 96, 96 Pro, 144 Pro, 144 Max), each showing how the house is assembled in 30 working days (45 for the Max): due diligence, a Gantt with a day scrubber, a 3D scene that builds itself as the day moves, options and resale, FAQ, partners, per m² costs, and WhatsApp calls to action. A static Vite + React + TypeScript + three.js site; deployed on Cloudflare Pages and embeddable by iframe.
+Five public, bilingual (PT/EN) pages, one per house model (Kiver 64, 96, 96 Pro, 144 Pro, 144 Max), each showing how the house is assembled in 30 working days (45 for the Max): due diligence, a Gantt with a day scrubber, a 3D scene that builds itself as the day moves, options and resale, FAQ, partners, per m² costs, and WhatsApp calls to action. A static Vite + React + TypeScript + three.js site; deployed on Cloudflare and embeddable by iframe.
 
 - Rules and decisions: `CLAUDE.md`, `SPEC.md` (the contract; see its amendments at the end)
 - Develop: `docs/DEV.md`. Deploy: `docs/DEPLOY.md`. Embed: `docs/EMBED.md`. Cameras: `docs/CAMERAS.md`.
