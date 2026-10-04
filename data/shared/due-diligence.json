@@ -133,8 +133,8 @@
         "pt": "Compras",
         "en": "Procurement"
       },
-      "pt": "Aço (2 a 3 semanas), compensado naval, telha sanduíche, esquadrias (4 a 6 semanas), siding, kits elétrico e hidráulico, cozinha e banheiros. Entregas casadas com os dias 1 a 13.",
-      "en": "Steel (2 to 3 weeks), naval plywood, sandwich roof, windows (4 to 6 weeks), siding, MEP kits, kitchen and bath packages. Deliveries matched to days 1 to 13."
+      "pt": "Estrutura (aço ou madeira, conforme o modelo; o aço leva 2 a 3 semanas), compensado e painéis, cobertura, esquadrias (4 a 6 semanas), revestimento externo, kits elétrico e hidráulico, cozinha e banheiros. Entregas casadas com o cronograma do modelo.",
+      "en": "Structure (steel or wood, by model; steel takes 2 to 3 weeks), plywood and panels, roofing, windows (4 to 6 weeks), exterior cladding, MEP kits, kitchen and bath packages. Deliveries matched to the model's schedule."
     },
     {
       "id": "site",
